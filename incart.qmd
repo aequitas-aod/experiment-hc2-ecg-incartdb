@@ -1,0 +1,149 @@
+---
+title: Extract demographics and symptoms from Physionet Incart db
+author: Paul Lemmens
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: simplex
+    fig-format: svg
+    default-image-extension: svg
+    dpi: 600
+    fig-asp: 0.618
+    fig-width: 8
+    # fig-height: 9
+    embed-resources: false
+mainfont: Source Sans Pro
+monofont: Source Code Pro
+fontsize: 14pt
+lightbox: auto
+execute:
+  echo: true
+  message: false
+  warning: false
+---
+
+```{r clear-workspace-and-prepare}
+#| label: set up script
+options(width=120)
+require(tidyverse)
+require(lemmens)
+require(patchwork)
+require(ggmosaic)
+palette <- 'Dark2'
+#palette <- 'Paired'
+```
+
+Before running this script, make sure to download the Incart DB from Physionet and unzip the data file in your `~/tmp/incartdb/` directory so that this Quarto file can find the data for processing.
+
+```{r}
+#| label: load the data
+data_location <- '~/tmp/incartdb/files/'
+extension <- 'hea$'
+header_files <- list.files(path = data_location, pattern = extension, full.names = TRUE)
+head(header_files)
+```
+
+Only the header files in the full set of files are relevant because those contain the demographics and symptoms/diagnoses. With a dedicate parser, we can loop over the file(s) and extra the relevant pieces.
+
+```{r}
+#| label: define parser function
+parse_hea <- function(f) {
+  d <- readLines(f)
+  search_pattern <- '#<age>:\\s[0-9]+\\s<sex>:\\s[MF]\\s(<diagnoses>\\s.+)?$'
+  res <- grep(search_pattern, d, value = TRUE)
+
+  return(res)
+}
+```
+
+```{r}
+#| label: parse header files
+headers <- tibble(header_file = header_files) %>%
+  mutate(id        = str_match(header_file, '(I[0-9]+)\\.hea$')[, 2],
+         demog     = parse_hea(header_file),
+         .by       = header_file) %>%
+  mutate(age       = as.integer(str_match(demog, '#<age>:\\s+(?<age>[0-9][0-9])\\s+')[, 2]),
+         gender    = str_match(demog, '\\s+<sex>:\\s+(?<gender>[MF])')[, 2],
+         diagnoses = str_match(demog, '\\s+<diagnoses>\\s+(?<diagnoses>.+)$')[, 2]) %>%
+  select(-demog)
+knitr::kable(headers, digits = 1)
+```
+
+```{r}
+#| label: calculate age bins
+breaks <- c(0, seq(20, max(headers$age) + 4, by = 5))
+headers <- headers %>%
+  mutate(age_bin = cut(age, breaks = breaks, right = TRUE))
+```
+
+Some simple plots and overviews show that there is not full, complete coverage. Unfortunately, with the few data fields available, calculating bias statistics may be difficult.
+
+```{r}
+#| label: male female balance
+headers %>%
+  count(gender) %>%
+  mutate(percentage = n / sum(n) * 100) %>%
+  knitr::kable(digits = 1)
+```
+
+
+```{r}
+#| label: age_histogram
+p1 <- headers %>%
+  ggplot(mapping = aes(x = age, fill = gender, colour = gender)) +
+    geom_histogram(binwidth = 1) +
+    lemmens::theme_lemmens + lemmens_brewer()
+p2 <- p1 + facet_wrap(~ gender)
+p1 + p2
+```
+
+```{r}
+#| label: age_bins
+headers %>% count(age_bin) %>% knitr::kable()
+```
+
+```{r}
+#| label: diagnoses-per-gender
+#| fig-format: png
+#| layout-ncol: 2
+headers %>%
+  separate_rows(diagnoses, sep = ',\\s*') %>%
+  count(gender, diagnoses) %>%
+  filter(!is.na(diagnoses)) %>%
+  ggplot() +
+    geom_mosaic(mapping = aes(x = product(gender, diagnoses), fill = gender)) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Mosaic Plot of Gender and Diagnoses")
+headers %>%
+  separate_rows(diagnoses, sep = ',\\s*') %>%
+  count(gender, diagnoses) %>%
+  ggplot(mapping = aes(x = diagnoses, y = gender, fill = n)) +
+    geom_tile() +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Heatmap of Diagnoses by Gender", x = "Diagnosis", y = "Gender")
+```
+
+```{r}
+#| label: diagnoses-per-age-bin
+#| fig-format: png
+headers %>%
+  separate_rows(diagnoses, sep = ',\\s*') %>%
+  count(age_bin, diagnoses) %>%
+  ggplot(mapping = aes(x = diagnoses, y = age_bin, fill = n)) +
+    geom_tile() +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Heatmap of Diagnoses by Gender", x = "Diagnosis", y = "Age bin")
+```
+
+
+Finally, save the processed data to disk so that they can be loaded in a Jupyter notebook that we need to use the Aequitas facilities.
+
+```{r}
+#| label: save to disk
+readr::write_csv(headers, file = 'incartdb_demographics.csv')
+```

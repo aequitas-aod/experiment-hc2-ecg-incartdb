@@ -148,9 +148,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">.by       =</span> header_file) <span class="sc">%&gt;%</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age       =</span> <span class="fu">as.integer</span>(<span class="fu">str_match</span>(demog, <span class="st">'#&lt;age&gt;:</span><span class="sc">\\</span><span class="st">s+(?&lt;age&gt;[0-9][0-9])</span><span class="sc">\\</span><span class="st">s+'</span>)[, <span class="dv">2</span>]),</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">gender    =</span> <span class="fu">str_match</span>(demog, <span class="st">'</span><span class="sc">\\</span><span class="st">s+&lt;sex&gt;:</span><span class="sc">\\</span><span class="st">s+(?&lt;gender&gt;[MF])'</span>)[, <span class="dv">2</span>],</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">diagnoses =</span> <span class="fu">str_match</span>(demog, <span class="st">'</span><span class="sc">\\</span><span class="st">s+&lt;diagnoses&gt;</span><span class="sc">\\</span><span class="st">s+(?&lt;diagnoses&gt;.+)$'</span>)[, <span class="dv">2</span>]) <span class="sc">%&gt;%</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>demog)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(headers, <span class="at">digits =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">diagnoses =</span> <span class="fu">str_match</span>(demog, <span class="st">'</span><span class="sc">\\</span><span class="st">s+&lt;diagnoses&gt;</span><span class="sc">\\</span><span class="st">s+(?&lt;diagnoses&gt;.+)$'</span>)[, <span class="dv">2</span>],</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">id        =</span> <span class="fu">as.integer</span>(<span class="fu">gsub</span>(<span class="st">'^I'</span>, <span class="st">''</span>, id))) <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>demog)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(headers, <span class="at">digits =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -158,12 +159,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <col style="width: 2%">
 <col style="width: 2%">
 <col style="width: 5%">
-<col style="width: 56%">
+<col style="width: 57%">
 </colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">header_file</th>
-<th style="text-align: left;">id</th>
+<th style="text-align: right;">id</th>
 <th style="text-align: right;">age</th>
 <th style="text-align: left;">gender</th>
 <th style="text-align: left;">diagnoses</th>
@@ -172,525 +173,525 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: left;">I01</td>
+<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: left;">I02</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I03.hea</td>
-<td style="text-align: left;">I03</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I04.hea</td>
-<td style="text-align: left;">I04</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I05.hea</td>
-<td style="text-align: left;">I05</td>
+<td style="text-align: right;">5</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I06.hea</td>
-<td style="text-align: left;">I06</td>
+<td style="text-align: right;">6</td>
 <td style="text-align: right;">80</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I07.hea</td>
-<td style="text-align: left;">I07</td>
+<td style="text-align: right;">7</td>
 <td style="text-align: right;">80</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I08.hea</td>
-<td style="text-align: left;">I08</td>
+<td style="text-align: right;">8</td>
 <td style="text-align: right;">51</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I09.hea</td>
-<td style="text-align: left;">I09</td>
+<td style="text-align: right;">9</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I10.hea</td>
-<td style="text-align: left;">I10</td>
+<td style="text-align: right;">10</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I11.hea</td>
-<td style="text-align: left;">I11</td>
+<td style="text-align: right;">11</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I12.hea</td>
-<td style="text-align: left;">I12</td>
+<td style="text-align: right;">12</td>
 <td style="text-align: right;">39</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I13.hea</td>
-<td style="text-align: left;">I13</td>
+<td style="text-align: right;">13</td>
 <td style="text-align: right;">39</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I14.hea</td>
-<td style="text-align: left;">I14</td>
+<td style="text-align: right;">14</td>
 <td style="text-align: right;">39</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I15.hea</td>
-<td style="text-align: left;">I15</td>
+<td style="text-align: right;">15</td>
 <td style="text-align: right;">57</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I16.hea</td>
-<td style="text-align: left;">I16</td>
+<td style="text-align: right;">16</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I17.hea</td>
-<td style="text-align: left;">I17</td>
+<td style="text-align: right;">17</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I18.hea</td>
-<td style="text-align: left;">I18</td>
+<td style="text-align: right;">18</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I19.hea</td>
-<td style="text-align: left;">I19</td>
+<td style="text-align: right;">19</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I20.hea</td>
-<td style="text-align: left;">I20</td>
+<td style="text-align: right;">20</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I21.hea</td>
-<td style="text-align: left;">I21</td>
+<td style="text-align: right;">21</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I22.hea</td>
-<td style="text-align: left;">I22</td>
+<td style="text-align: right;">22</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I23.hea</td>
-<td style="text-align: left;">I23</td>
+<td style="text-align: right;">23</td>
 <td style="text-align: right;">52</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I24.hea</td>
-<td style="text-align: left;">I24</td>
+<td style="text-align: right;">24</td>
 <td style="text-align: right;">52</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I25.hea</td>
-<td style="text-align: left;">I25</td>
+<td style="text-align: right;">25</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Sinus node dysfunction</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I26.hea</td>
-<td style="text-align: left;">I26</td>
+<td style="text-align: right;">26</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Sinus node dysfunction</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I27.hea</td>
-<td style="text-align: left;">I27</td>
+<td style="text-align: right;">27</td>
 <td style="text-align: right;">60</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I28.hea</td>
-<td style="text-align: left;">I28</td>
+<td style="text-align: right;">28</td>
 <td style="text-align: right;">60</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I29.hea</td>
-<td style="text-align: left;">I29</td>
+<td style="text-align: right;">29</td>
 <td style="text-align: right;">41</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I30.hea</td>
-<td style="text-align: left;">I30</td>
+<td style="text-align: right;">30</td>
 <td style="text-align: right;">41</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I31.hea</td>
-<td style="text-align: left;">I31</td>
+<td style="text-align: right;">31</td>
 <td style="text-align: right;">41</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I32.hea</td>
-<td style="text-align: left;">I32</td>
+<td style="text-align: right;">32</td>
 <td style="text-align: right;">41</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I33.hea</td>
-<td style="text-align: left;">I33</td>
+<td style="text-align: right;">33</td>
 <td style="text-align: right;">40</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I34.hea</td>
-<td style="text-align: left;">I34</td>
+<td style="text-align: right;">34</td>
 <td style="text-align: right;">40</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I35.hea</td>
-<td style="text-align: left;">I35</td>
+<td style="text-align: right;">35</td>
 <td style="text-align: right;">38</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I36.hea</td>
-<td style="text-align: left;">I36</td>
+<td style="text-align: right;">36</td>
 <td style="text-align: right;">38</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I37.hea</td>
-<td style="text-align: left;">I37</td>
+<td style="text-align: right;">37</td>
 <td style="text-align: right;">38</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I38.hea</td>
-<td style="text-align: left;">I38</td>
+<td style="text-align: right;">38</td>
 <td style="text-align: right;">60</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I39.hea</td>
-<td style="text-align: left;">I39</td>
+<td style="text-align: right;">39</td>
 <td style="text-align: right;">60</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I40.hea</td>
-<td style="text-align: left;">I40</td>
+<td style="text-align: right;">40</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I41.hea</td>
-<td style="text-align: left;">I41</td>
+<td style="text-align: right;">41</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I42.hea</td>
-<td style="text-align: left;">I42</td>
+<td style="text-align: right;">42</td>
 <td style="text-align: right;">19</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I43.hea</td>
-<td style="text-align: left;">I43</td>
+<td style="text-align: right;">43</td>
 <td style="text-align: right;">19</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I44.hea</td>
-<td style="text-align: left;">I44</td>
+<td style="text-align: right;">44</td>
 <td style="text-align: right;">53</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I45.hea</td>
-<td style="text-align: left;">I45</td>
+<td style="text-align: right;">45</td>
 <td style="text-align: right;">53</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I46.hea</td>
-<td style="text-align: left;">I46</td>
+<td style="text-align: right;">46</td>
 <td style="text-align: right;">53</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I47.hea</td>
-<td style="text-align: left;">I47</td>
+<td style="text-align: right;">47</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I48.hea</td>
-<td style="text-align: left;">I48</td>
+<td style="text-align: right;">48</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I49.hea</td>
-<td style="text-align: left;">I49</td>
+<td style="text-align: right;">49</td>
 <td style="text-align: right;">70</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I50.hea</td>
-<td style="text-align: left;">I50</td>
+<td style="text-align: right;">50</td>
 <td style="text-align: right;">70</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I51.hea</td>
-<td style="text-align: left;">I51</td>
+<td style="text-align: right;">51</td>
 <td style="text-align: right;">56</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I52.hea</td>
-<td style="text-align: left;">I52</td>
+<td style="text-align: right;">52</td>
 <td style="text-align: right;">56</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I53.hea</td>
-<td style="text-align: left;">I53</td>
+<td style="text-align: right;">53</td>
 <td style="text-align: right;">56</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I54.hea</td>
-<td style="text-align: left;">I54</td>
+<td style="text-align: right;">54</td>
 <td style="text-align: right;">74</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I55.hea</td>
-<td style="text-align: left;">I55</td>
+<td style="text-align: right;">55</td>
 <td style="text-align: right;">74</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I56.hea</td>
-<td style="text-align: left;">I56</td>
+<td style="text-align: right;">56</td>
 <td style="text-align: right;">74</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I57.hea</td>
-<td style="text-align: left;">I57</td>
+<td style="text-align: right;">57</td>
 <td style="text-align: right;">45</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I58.hea</td>
-<td style="text-align: left;">I58</td>
+<td style="text-align: right;">58</td>
 <td style="text-align: right;">45</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I59.hea</td>
-<td style="text-align: left;">I59</td>
+<td style="text-align: right;">59</td>
 <td style="text-align: right;">49</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I60.hea</td>
-<td style="text-align: left;">I60</td>
+<td style="text-align: right;">60</td>
 <td style="text-align: right;">49</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I61.hea</td>
-<td style="text-align: left;">I61</td>
+<td style="text-align: right;">61</td>
 <td style="text-align: right;">49</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I62.hea</td>
-<td style="text-align: left;">I62</td>
+<td style="text-align: right;">62</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I63.hea</td>
-<td style="text-align: left;">I63</td>
+<td style="text-align: right;">63</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I64.hea</td>
-<td style="text-align: left;">I64</td>
+<td style="text-align: right;">64</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I65.hea</td>
-<td style="text-align: left;">I65</td>
+<td style="text-align: right;">65</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I66.hea</td>
-<td style="text-align: left;">I66</td>
+<td style="text-align: right;">66</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I67.hea</td>
-<td style="text-align: left;">I67</td>
+<td style="text-align: right;">67</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I68.hea</td>
-<td style="text-align: left;">I68</td>
+<td style="text-align: right;">68</td>
 <td style="text-align: right;">62</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I69.hea</td>
-<td style="text-align: left;">I69</td>
+<td style="text-align: right;">69</td>
 <td style="text-align: right;">62</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I70.hea</td>
-<td style="text-align: left;">I70</td>
+<td style="text-align: right;">70</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I71.hea</td>
-<td style="text-align: left;">I71</td>
+<td style="text-align: right;">71</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I72.hea</td>
-<td style="text-align: left;">I72</td>
+<td style="text-align: right;">72</td>
 <td style="text-align: right;">73</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I73.hea</td>
-<td style="text-align: left;">I73</td>
+<td style="text-align: right;">73</td>
 <td style="text-align: right;">73</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I74.hea</td>
-<td style="text-align: left;">I74</td>
+<td style="text-align: right;">74</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I75.hea</td>
-<td style="text-align: left;">I75</td>
+<td style="text-align: right;">75</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>

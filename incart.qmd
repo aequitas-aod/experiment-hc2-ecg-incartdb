@@ -65,7 +65,8 @@ headers <- tibble(header_file = header_files) %>%
          .by       = header_file) %>%
   mutate(age       = as.integer(str_match(demog, '#<age>:\\s+(?<age>[0-9][0-9])\\s+')[, 2]),
          gender    = str_match(demog, '\\s+<sex>:\\s+(?<gender>[MF])')[, 2],
-         diagnoses = str_match(demog, '\\s+<diagnoses>\\s+(?<diagnoses>.+)$')[, 2]) %>%
+         diagnoses = str_match(demog, '\\s+<diagnoses>\\s+(?<diagnoses>.+)$')[, 2],
+         id        = as.integer(gsub('^I', '', id))) %>%
   select(-demog)
 knitr::kable(headers, digits = 1)
 ```

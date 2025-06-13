@@ -95,3 +95,106 @@ def plot_correlation_matrix(df, selected_columns, cmap="bwr", figsize=(10, 10)):
     plt.show()
 
 
+"""
+Bias Analysis
+"""
+
+def test_bias(df, protected_attr_col, attr_favorable_value,
+              target_var: str = 'diagnosis'):
+    """
+    Test bias for each diagnosis in the DataFrame.
+
+    Because this code is repurposed from an earlier analysis in the context of
+    HR use cases, the terminology sector now refers to a diagnosis instead of
+    an employement sector.
+
+    Parameters:
+    - df: DataFrame to analyze.
+    - protected_attr_col: Protected attribute column name.
+    - attr_favorable_value: Protected attribute value.
+
+    Returns:
+    - DataFrame containing fairness metrics for each diagnosis.
+    """
+    results = []
+
+    for diagnosis_name, group in df.groupby(target_var):
+        group_df = group.copy()
+
+        bld = BinaryLabelDataset(
+            df=group_df[['present', 'gender']],
+            label_names=['present'],
+            protected_attribute_names=['gender']
+        )
+
+        metric = BinaryLabelDatasetMetric(
+            bld,
+            privileged_groups=[{'gender': 1}],
+            unprivileged_groups=[{'gender': 0}],
+        )
+
+        didi = DIDI_r(group_df, group_df["present"], {protected_attr_col: [1]})
+
+        results.append({
+            'diagnosis': diagnosis_name,
+            'disparate_impact': metric.disparate_impact(),
+            'statistical_parity_difference': metric.statistical_parity_difference(),
+            'DIDI': didi
+        })
+
+    return pd.DataFrame(results)
+
+
+def DIDI_r(data, pred, protected):
+    res, avg = 0, np.mean(pred)
+    for aname, dom in protected.items():
+        for val in dom:
+            mask = data[aname] == val
+            res += abs(avg - np.mean(pred[mask]))
+    return res
+
+
+def show_bias(df, protected_attr_col, attr_favorable_value, target_var='diagnosis',
+              plot_histogram=False):
+    """
+    Show bias analysis for the specified protected attribute column.
+
+    Because this function is repurposed from an earlier analysis on a more
+    extensive data set, the meaning of sector changed to diagnosis.
+
+    Parameters:
+    - df: DataFrame to analyze.
+    - protected_attr_col: Protected attribute column name.
+    - attr_favorable_value: Protected attribute value.
+    - plot_histogram: Boolean indicating whether to plot histograms for each sector.
+
+    Returns:
+    - DataFrame containing fairness metrics for each sector.
+    """
+
+    all_sector_metrics = test_bias(df, protected_attr_col, attr_favorable_value)
+    all_sector_metrics.to_csv("Results/bias_analysis_" + protected_attr_col + ".csv")
+
+    if plot_histogram:
+        for sector in df[target_var].unique():
+            plot_histogram_metric(
+                all_sector_metrics,
+                "Disparate_Impact",
+                sector,
+                protected_attr_col,
+                save=True,
+            )
+            plot_histogram_metric(
+                all_sector_metrics,
+                "Statistical_Parity_Difference",
+                sector,
+                protected_attr_col,
+                save=True,
+            )
+            # plot_histogram_metric(
+            #     all_sector_metrics, "DIDI", sector, protected_attr_col, save=True
+            # )
+
+    return all_sector_metrics
+
+

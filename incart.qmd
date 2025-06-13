@@ -34,6 +34,8 @@ palette <- 'Dark2'
 #palette <- 'Paired'
 ```
 
+# Data processing 
+
 Before running this script, make sure to download the Incart DB from Physionet and unzip the data file in your `~/tmp/incartdb/` directory so that this Quarto file can find the data for processing.
 
 ```{r}
@@ -78,11 +80,37 @@ headers <- headers %>%
   mutate(age_bin = cut(age, breaks = breaks, right = TRUE))
 ```
 
+```{r}
+#| label: split diagnoses in rows
+headers <- headers %>%
+  separate_longer_delim(cols = diagnoses, delim = ',') %>%
+  rename(diagnosis = diagnoses)
+headers %>% head(10) %>% knitr::kable()
+```
+
+To calculate disparate impact and statistical parity (ignoring the point whether this makes sense), for the Python AIF360 package, we need to have both presence and absence of diagnoses for each patient. Do this in R as this is common idiom.
+
+```{r}
+#| label: set presence absence diagnosis
+dat <- headers %>%
+  mutate(presence = 1) %>% # Set presence so that pivot_wider fills in, filling in empty cells with
+  pivot_wider(names_from = diagnosis, values_from = presence, values_fill = 0) %>% # absence as 0.
+  pivot_longer(cols = -c(header_file, id, age, gender, age_bin), names_to = 'diagnosis',
+               values_to = 'present') %>%
+  filter(diagnosis != 'NA') %>%
+  mutate(diagnosis = trimws(diagnosis))
+dat %>% head(10) %>% knitr::kable()
+```
+
+
+# Overview of data
+
 Some simple plots and overviews show that there is not full, complete coverage. Unfortunately, with the few data fields available, calculating bias statistics may be difficult.
 
 ```{r}
 #| label: male female balance
 headers %>%
+  distinct(id, gender) %>%
   count(gender) %>%
   mutate(percentage = n / sum(n) * 100) %>%
   knitr::kable(digits = 1)
@@ -92,6 +120,7 @@ headers %>%
 ```{r}
 #| label: age_histogram
 p1 <- headers %>%
+  distinct(id, gender, age) %>%
   ggplot(mapping = aes(x = age, fill = gender, colour = gender)) +
     geom_histogram(binwidth = 1) +
     lemmens::theme_lemmens + lemmens_brewer()
@@ -101,44 +130,41 @@ p1 + p2
 
 ```{r}
 #| label: age_bins
-headers %>% count(age_bin) %>% knitr::kable()
+headers %>% distinct(id, age_bin) %>% count(age_bin) %>% knitr::kable()
 ```
 
 ```{r}
-#| label: diagnoses-per-gender
+#| label: diagnosis-per-gender
 #| fig-format: png
 #| layout-ncol: 2
 headers %>%
-  separate_rows(diagnoses, sep = ',\\s*') %>%
-  count(gender, diagnoses) %>%
-  filter(!is.na(diagnoses)) %>%
+  count(gender, diagnosis) %>%
+  filter(!is.na(diagnosis)) %>%
   ggplot() +
-    geom_mosaic(mapping = aes(x = product(gender, diagnoses), fill = gender)) +
+    geom_mosaic(mapping = aes(x = product(gender, diagnosis), fill = gender)) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    labs(title = "Mosaic Plot of Gender and Diagnoses")
+    labs(title = "Mosaic Plot of Gender and Diagnosis")
 headers %>%
-  separate_rows(diagnoses, sep = ',\\s*') %>%
-  count(gender, diagnoses) %>%
-  ggplot(mapping = aes(x = diagnoses, y = gender, fill = n)) +
+  count(gender, diagnosis) %>%
+  ggplot(mapping = aes(x = diagnosis, y = gender, fill = n)) +
     geom_tile() +
     scale_fill_gradient(low = "white", high = "steelblue") +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    labs(title = "Heatmap of Diagnoses by Gender", x = "Diagnosis", y = "Gender")
+    labs(title = "Heatmap of Diagnosis by Gender", x = "Diagnosis", y = "Gender")
 ```
 
 ```{r}
-#| label: diagnoses-per-age-bin
+#| label: diagnosis-per-age-bin
 #| fig-format: png
 headers %>%
-  separate_rows(diagnoses, sep = ',\\s*') %>%
-  count(age_bin, diagnoses) %>%
-  ggplot(mapping = aes(x = diagnoses, y = age_bin, fill = n)) +
+  count(age_bin, diagnosis) %>%
+  ggplot(mapping = aes(x = diagnosis, y = age_bin, fill = n)) +
     geom_tile() +
     scale_fill_gradient(low = "white", high = "steelblue") +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    labs(title = "Heatmap of Diagnoses by Gender", x = "Diagnosis", y = "Age bin")
+    labs(title = "Heatmap of Diagnosis by Gender", x = "Diagnosis", y = "Age bin")
 ```
 
 
@@ -146,5 +172,5 @@ Finally, save the processed data to disk so that they can be loaded in a Jupyter
 
 ```{r}
 #| label: save to disk
-readr::write_csv(headers, file = 'incartdb_demographics.csv')
+readr::write_csv(dat, file = 'incartdb_demographics.csv')
 ```

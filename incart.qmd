@@ -75,7 +75,7 @@ knitr::kable(headers, digits = 1)
 
 ```{r}
 #| label: calculate age bins
-breaks <- c(0, seq(20, max(headers$age) + 4, by = 5))
+breaks <- c(0, seq(20, max(headers$age) + 9, by = 10))
 headers <- headers %>%
   mutate(age_bin = cut(age, breaks = breaks, right = TRUE))
 ```

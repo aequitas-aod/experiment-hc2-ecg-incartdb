@@ -65,6 +65,10 @@ def process_full_dataset(df, dataset_name):
     return df_processed
 
 
+"""
+Data Analysis
+"""
+
 def plot_correlation_matrix(df, selected_columns, cmap="bwr", figsize=(10, 10)):
     """
     Plot the correlation matrix for selected columns of a DataFrame.
@@ -122,15 +126,15 @@ def test_bias(df, protected_attr_col, attr_favorable_value,
         group_df = group.copy()
 
         bld = BinaryLabelDataset(
-            df=group_df[['present', 'gender']],
+        df=group_df[['present', protected_attr_col]],
             label_names=['present'],
-            protected_attribute_names=['gender']
+            protected_attribute_names=[protected_attr_col]
         )
 
         metric = BinaryLabelDatasetMetric(
             bld,
-            privileged_groups=[{'gender': 1}],
-            unprivileged_groups=[{'gender': 0}],
+            privileged_groups=[{protected_attr_col: 1}],
+            unprivileged_groups=[{protected_attr_col: 0}],
         )
 
         didi = DIDI_r(group_df, group_df["present"], {protected_attr_col: [1]})
@@ -191,9 +195,9 @@ def show_bias(df, protected_attr_col, attr_favorable_value, target_var='diagnosi
                 protected_attr_col,
                 save=True,
             )
-            # plot_histogram_metric(
-            #     all_sector_metrics, "DIDI", sector, protected_attr_col, save=True
-            # )
+            plot_histogram_metric(
+                all_sector_metrics, "DIDI", sector, protected_attr_col, save=True
+            )
 
     return all_sector_metrics
 

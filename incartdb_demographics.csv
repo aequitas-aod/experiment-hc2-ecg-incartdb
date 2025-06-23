@@ -1,123 +1,123 @@
 header_file,id,age,gender,age_bin,diagnosis,present
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",Acute MI,1
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",Acute MI,1
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",Acute MI,1
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(75,80]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(75,80]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,55]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,65]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I01.hea,1,65,F,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I02.hea,2,65,F,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",Acute MI,1
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I03.hea,3,59,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",Acute MI,1
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I04.hea,4,59,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",Acute MI,1
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I05.hea,5,59,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I06.hea,6,80,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I07.hea,7,80,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I08.hea,8,51,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I09.hea,9,68,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I10.hea,10,68,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I11.hea,11,68,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I12.hea,12,39,F,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I13.hea,13,39,F,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I14.hea,14,39,F,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I15.hea,15,57,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I16.hea,16,64,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I17.hea,17,64,M,"(60,70]",Sinus node dysfunction,0
 /Users/nlv19419/tmp/incartdb/files//I18.hea,18,18,F,"(0,20]",Coronary artery disease,0
 /Users/nlv19419/tmp/incartdb/files//I18.hea,18,18,F,"(0,20]",arterial hypertension,0
 /Users/nlv19419/tmp/incartdb/files//I18.hea,18,18,F,"(0,20]",Acute MI,0
@@ -132,160 +132,160 @@ header_file,id,age,gender,age_bin,diagnosis,present
 /Users/nlv19419/tmp/incartdb/files//I19.hea,19,18,F,"(0,20]",left ventricular hypertrophy,0
 /Users/nlv19419/tmp/incartdb/files//I19.hea,19,18,F,"(0,20]",Earlier MI,0
 /Users/nlv19419/tmp/incartdb/files//I19.hea,19,18,F,"(0,20]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,55]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,55]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(65,70]",Sinus node dysfunction,1
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(65,70]",Sinus node dysfunction,1
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,45]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,45]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,45]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,45]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(35,40]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",Transient ischemic attack,1
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(65,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I20.hea,20,59,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I21.hea,21,59,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I22.hea,22,59,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I23.hea,23,52,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I24.hea,24,52,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I25.hea,25,66,F,"(60,70]",Sinus node dysfunction,1
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I26.hea,26,66,F,"(60,70]",Sinus node dysfunction,1
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I27.hea,27,60,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I28.hea,28,60,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I29.hea,29,41,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I30.hea,30,41,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I31.hea,31,41,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I32.hea,32,41,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I33.hea,33,40,M,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I34.hea,34,40,M,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I35.hea,35,38,F,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I36.hea,36,38,F,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I37.hea,37,38,F,"(30,40]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I38.hea,38,60,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I39.hea,39,60,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I40.hea,40,66,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",Transient ischemic attack,1
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I41.hea,41,66,M,"(60,70]",Sinus node dysfunction,0
 /Users/nlv19419/tmp/incartdb/files//I42.hea,42,19,M,"(0,20]",Coronary artery disease,0
 /Users/nlv19419/tmp/incartdb/files//I42.hea,42,19,M,"(0,20]",arterial hypertension,0
 /Users/nlv19419/tmp/incartdb/files//I42.hea,42,19,M,"(0,20]",Acute MI,0
@@ -300,227 +300,227 @@ header_file,id,age,gender,age_bin,diagnosis,present
 /Users/nlv19419/tmp/incartdb/files//I43.hea,43,19,M,"(0,20]",left ventricular hypertrophy,0
 /Users/nlv19419/tmp/incartdb/files//I43.hea,43,19,M,"(0,20]",Earlier MI,0
 /Users/nlv19419/tmp/incartdb/files//I43.hea,43,19,M,"(0,20]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,55]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,55]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,55]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,75]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,75]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,75]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,45]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,45]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(45,50]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(45,50]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(45,50]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",Acute MI,1
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",Acute MI,1
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",Acute MI,1
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(55,60]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,65]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,75]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",Coronary artery disease,1
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",arterial hypertension,1
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",left ventricular hypertrophy,1
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",Earlier MI,0
-/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,75]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(65,70]",Sinus node dysfunction,0
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",Coronary artery disease,0
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",arterial hypertension,0
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",Acute MI,0
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",Transient ischemic attack,0
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",left ventricular hypertrophy,0
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",Earlier MI,1
-/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(65,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I44.hea,44,53,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I45.hea,45,53,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I46.hea,46,53,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I47.hea,47,68,F,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I48.hea,48,68,F,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I49.hea,49,70,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I50.hea,50,70,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I51.hea,51,56,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I52.hea,52,56,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I53.hea,53,56,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I54.hea,54,74,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I55.hea,55,74,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I56.hea,56,74,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I57.hea,57,45,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I58.hea,58,45,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I59.hea,59,49,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I60.hea,60,49,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I61.hea,61,49,F,"(40,50]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",Acute MI,1
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I62.hea,62,58,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",Acute MI,1
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I63.hea,63,58,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",Acute MI,1
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I64.hea,64,58,M,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I65.hea,65,58,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I66.hea,66,58,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I67.hea,67,58,F,"(50,60]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I68.hea,68,62,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I69.hea,69,62,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I70.hea,70,64,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I71.hea,71,64,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I72.hea,72,73,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",Coronary artery disease,1
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",arterial hypertension,1
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",left ventricular hypertrophy,1
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",Earlier MI,0
+/Users/nlv19419/tmp/incartdb/files//I73.hea,73,73,M,"(70,80]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I74.hea,74,66,M,"(60,70]",Sinus node dysfunction,0
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",Coronary artery disease,0
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",arterial hypertension,0
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",Acute MI,0
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",Transient ischemic attack,0
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",left ventricular hypertrophy,0
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",Earlier MI,1
+/Users/nlv19419/tmp/incartdb/files//I75.hea,75,66,M,"(60,70]",Sinus node dysfunction,0

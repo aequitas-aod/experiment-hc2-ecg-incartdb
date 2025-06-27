@@ -133,7 +133,7 @@ def test_bias(df, protected_attr_col, attr_favorable_value,
 
         metric = BinaryLabelDatasetMetric(
             bld,
-            privileged_groups=[{protected_attr_col: 1}],
+            privileged_groups=[{protected_attr_col: attr_favorable_value}],
             unprivileged_groups=[{protected_attr_col: 0}],
         )
 

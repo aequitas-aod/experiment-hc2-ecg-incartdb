@@ -68,10 +68,37 @@ headers <- tibble(header_file = header_files) %>%
   mutate(age       = as.integer(str_match(demog, '#<age>:\\s+(?<age>[0-9][0-9])\\s+')[, 2]),
          gender    = str_match(demog, '\\s+<sex>:\\s+(?<gender>[MF])')[, 2],
          diagnoses = str_match(demog, '\\s+<diagnoses>\\s+(?<diagnoses>.+)$')[, 2],
-         id        = as.integer(gsub('^I', '', id))) %>%
+         ## id        = as.integer(gsub('^I', '', id))
+         ) %>%
   select(-demog)
+```
+
+```{r}
+#| label: parse patient-record info
+info_file <- 'files-patients-diagnoses.txt'
+info <- readLines(file.path(data_location, info_file))
+patient_files <- tibble(id = gl(32, 3), txt = info) %>%
+  summarize(pid = txt[1],
+            files = txt[2],
+            .by = id) %>%
+  separate_longer_delim(cols = files, delim = ' ') %>%
+  select(-id) %>%
+  rename(id = files)
+
+headers <- right_join(headers, patient_files, by = 'id') %>%
+  select(-header_file, -id) %>%
+  distinct()
 knitr::kable(headers, digits = 1)
 ```
+
+```{r}
+#| label: count NA diagnosis 
+headers %>% count(diagnoses) %>%
+  knitr::kable()
+```
+
+There are a considerable number of patients in the database that have provided ECG but for which no diagnosis is provided. It maybe that these are healthy patients or the diagnosis may have been omitted for other reasons.
+
 
 ```{r}
 #| label: calculate age bins
@@ -88,14 +115,14 @@ headers <- headers %>%
 headers %>% head(10) %>% knitr::kable()
 ```
 
-To calculate disparate impact and statistical parity (ignoring the point whether this makes sense), for the Python AIF360 package, we need to have both presence and absence of diagnoses for each patient. Do this in R as this is common idiom.
+To calculate disparate impact and statistical parity (ignoring the point whether this makes sense), for the Python AIF360 package, we need to have both presence and absence of diagnoses for each patient. **Note that the patients without diagnosis will as such only have absence scores** and this may result in artificial bias.
 
 ```{r}
 #| label: set presence absence diagnosis
 dat <- headers %>%
   mutate(presence = 1) %>% # Set presence so that pivot_wider fills in, filling in empty cells with
   pivot_wider(names_from = diagnosis, values_from = presence, values_fill = 0) %>% # absence as 0.
-  pivot_longer(cols = -c(header_file, id, age, gender, age_bin), names_to = 'diagnosis',
+  pivot_longer(cols = -c(pid, age, gender, age_bin), names_to = 'diagnosis',
                values_to = 'present') %>%
   filter(diagnosis != 'NA') %>%
   mutate(diagnosis = trimws(diagnosis))
@@ -110,7 +137,7 @@ Some simple plots and overviews show that there is not full, complete coverage. 
 ```{r}
 #| label: male female balance
 headers %>%
-  distinct(id, gender) %>%
+  distinct(pid, gender) %>%
   count(gender) %>%
   mutate(percentage = n / sum(n) * 100) %>%
   knitr::kable(digits = 1)
@@ -119,8 +146,9 @@ headers %>%
 
 ```{r}
 #| label: age_histogram
+#| fig-format: png
 p1 <- headers %>%
-  distinct(id, gender, age) %>%
+  distinct(pid, gender, age) %>%
   ggplot(mapping = aes(x = age, fill = gender, colour = gender)) +
     geom_histogram(binwidth = 1) +
     lemmens::theme_lemmens + lemmens_brewer()
@@ -130,22 +158,22 @@ p1 + p2
 
 ```{r}
 #| label: age_bins
-headers %>% distinct(id, age_bin) %>% count(age_bin) %>% knitr::kable()
+headers %>% distinct(pid, age_bin) %>% count(age_bin) %>% knitr::kable()
 ```
 
 ```{r}
 #| label: diagnosis-per-gender
 #| fig-format: png
-#| layout-ncol: 2
+## headers %>%
+##   count(gender, diagnosis) %>%
+##   filter(!is.na(diagnosis)) %>%
+##   ggplot() +
+##     geom_mosaic(mapping = aes(x = product(gender, diagnosis), fill = gender)) +
+##     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+##     labs(title = "Mosaic Plot of Gender and Diagnosis")
 headers %>%
   count(gender, diagnosis) %>%
-  filter(!is.na(diagnosis)) %>%
-  ggplot() +
-    geom_mosaic(mapping = aes(x = product(gender, diagnosis), fill = gender)) +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    labs(title = "Mosaic Plot of Gender and Diagnosis")
-headers %>%
-  count(gender, diagnosis) %>%
+  ## filter(!is.na(diagnosis)) %>%
   ggplot(mapping = aes(x = diagnosis, y = gender, fill = n)) +
     geom_tile() +
     scale_fill_gradient(low = "white", high = "steelblue") +
@@ -159,12 +187,13 @@ headers %>%
 #| fig-format: png
 headers %>%
   count(age_bin, diagnosis) %>%
+  ## filter(!is.na(diagnosis)) %>%
   ggplot(mapping = aes(x = diagnosis, y = age_bin, fill = n)) +
     geom_tile() +
     scale_fill_gradient(low = "white", high = "steelblue") +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-    labs(title = "Heatmap of Diagnosis by Gender", x = "Diagnosis", y = "Age bin")
+    labs(title = "Heatmap of Diagnosis by Age Bin", x = "Diagnosis", y = "Age bin")
 ```
 
 

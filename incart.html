@@ -158,699 +158,408 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age       =</span> <span class="fu">as.integer</span>(<span class="fu">str_match</span>(demog, <span class="st">'#&lt;age&gt;:</span><span class="sc">\\</span><span class="st">s+(?&lt;age&gt;[0-9][0-9])</span><span class="sc">\\</span><span class="st">s+'</span>)[, <span class="dv">2</span>]),</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">gender    =</span> <span class="fu">str_match</span>(demog, <span class="st">'</span><span class="sc">\\</span><span class="st">s+&lt;sex&gt;:</span><span class="sc">\\</span><span class="st">s+(?&lt;gender&gt;[MF])'</span>)[, <span class="dv">2</span>],</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">diagnoses =</span> <span class="fu">str_match</span>(demog, <span class="st">'</span><span class="sc">\\</span><span class="st">s+&lt;diagnoses&gt;</span><span class="sc">\\</span><span class="st">s+(?&lt;diagnoses&gt;.+)$'</span>)[, <span class="dv">2</span>],</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">id        =</span> <span class="fu">as.integer</span>(<span class="fu">gsub</span>(<span class="st">'^I'</span>, <span class="st">''</span>, id))) <span class="sc">%&gt;%</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>demog)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(headers, <span class="at">digits =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>         <span class="do">## id        = as.integer(gsub('^I', '', id))</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>         ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>demog)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>info_file <span class="ot">&lt;-</span> <span class="st">'files-patients-diagnoses.txt'</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>info <span class="ot">&lt;-</span> <span class="fu">readLines</span>(<span class="fu">file.path</span>(data_location, info_file))</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>patient_files <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">id =</span> <span class="fu">gl</span>(<span class="dv">32</span>, <span class="dv">3</span>), <span class="at">txt =</span> info) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">pid =</span> txt[<span class="dv">1</span>],</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">files =</span> txt[<span class="dv">2</span>],</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> id) <span class="sc">%&gt;%</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(<span class="at">cols =</span> files, <span class="at">delim =</span> <span class="st">' '</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>id) <span class="sc">%&gt;%</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">id =</span> files)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>headers <span class="ot">&lt;-</span> <span class="fu">right_join</span>(headers, patient_files, <span class="at">by =</span> <span class="st">'id'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>header_file, <span class="sc">-</span>id) <span class="sc">%&gt;%</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(headers, <span class="at">digits =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 32%">
-<col style="width: 2%">
-<col style="width: 2%">
-<col style="width: 5%">
-<col style="width: 57%">
+<col style="width: 4%">
+<col style="width: 7%">
+<col style="width: 77%">
+<col style="width: 11%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">header_file</th>
-<th style="text-align: right;">id</th>
 <th style="text-align: right;">age</th>
 <th style="text-align: left;">gender</th>
 <th style="text-align: left;">diagnoses</th>
+<th style="text-align: left;">pid</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
+<td style="text-align: left;">patient 1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">Acute MI</td>
+<td style="text-align: left;">patient 2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I03.hea</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I04.hea</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I05.hea</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I06.hea</td>
-<td style="text-align: right;">6</td>
 <td style="text-align: right;">80</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I07.hea</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">80</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 3</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I08.hea</td>
-<td style="text-align: right;">8</td>
 <td style="text-align: right;">51</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 4</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I09.hea</td>
-<td style="text-align: right;">9</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 5</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I10.hea</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">68</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I11.hea</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">68</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I12.hea</td>
-<td style="text-align: right;">12</td>
 <td style="text-align: right;">39</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 6</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I13.hea</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I14.hea</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I15.hea</td>
-<td style="text-align: right;">15</td>
 <td style="text-align: right;">57</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 7</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I16.hea</td>
-<td style="text-align: right;">16</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 8</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I17.hea</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">64</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Transient ischemic attack</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I18.hea</td>
-<td style="text-align: right;">18</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I19.hea</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 9</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I20.hea</td>
-<td style="text-align: right;">20</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
+<td style="text-align: left;">patient 10</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I21.hea</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I22.hea</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I23.hea</td>
-<td style="text-align: right;">23</td>
 <td style="text-align: right;">52</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
+<td style="text-align: left;">patient 11</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I24.hea</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Earlier MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I25.hea</td>
-<td style="text-align: right;">25</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Sinus node dysfunction</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I26.hea</td>
-<td style="text-align: right;">26</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Sinus node dysfunction</td>
+<td style="text-align: left;">patient 12</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I27.hea</td>
-<td style="text-align: right;">27</td>
 <td style="text-align: right;">60</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 13</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I28.hea</td>
-<td style="text-align: right;">28</td>
-<td style="text-align: right;">60</td>
-<td style="text-align: left;">M</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 14</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I29.hea</td>
-<td style="text-align: right;">29</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I30.hea</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I31.hea</td>
-<td style="text-align: right;">31</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I32.hea</td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I33.hea</td>
-<td style="text-align: right;">33</td>
 <td style="text-align: right;">40</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 15</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I34.hea</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
+<td style="text-align: left;">patient 16</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I35.hea</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I36.hea</td>
-<td style="text-align: right;">36</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I37.hea</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I38.hea</td>
-<td style="text-align: right;">38</td>
 <td style="text-align: right;">60</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I39.hea</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: right;">60</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
+<td style="text-align: left;">patient 17</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I40.hea</td>
-<td style="text-align: right;">40</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 18</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I41.hea</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Transient ischemic attack</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I42.hea</td>
-<td style="text-align: right;">42</td>
 <td style="text-align: right;">19</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I43.hea</td>
-<td style="text-align: right;">43</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 19</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I44.hea</td>
-<td style="text-align: right;">44</td>
 <td style="text-align: right;">53</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
+<td style="text-align: left;">patient 20</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I45.hea</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: right;">53</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I46.hea</td>
-<td style="text-align: right;">46</td>
-<td style="text-align: right;">53</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I47.hea</td>
-<td style="text-align: right;">47</td>
 <td style="text-align: right;">68</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Earlier MI</td>
+<td style="text-align: left;">patient 21</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I48.hea</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: right;">68</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Earlier MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I49.hea</td>
-<td style="text-align: right;">49</td>
 <td style="text-align: right;">70</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I50.hea</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">70</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 22</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I51.hea</td>
-<td style="text-align: right;">51</td>
 <td style="text-align: right;">56</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 23</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I52.hea</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">56</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I53.hea</td>
-<td style="text-align: right;">53</td>
-<td style="text-align: right;">56</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I54.hea</td>
-<td style="text-align: right;">54</td>
 <td style="text-align: right;">74</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
+<td style="text-align: left;">patient 24</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I55.hea</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">74</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Earlier MI</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I56.hea</td>
-<td style="text-align: right;">56</td>
-<td style="text-align: right;">74</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Earlier MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I57.hea</td>
-<td style="text-align: right;">57</td>
 <td style="text-align: right;">45</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
+<td style="text-align: left;">patient 25</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I58.hea</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I59.hea</td>
-<td style="text-align: right;">59</td>
 <td style="text-align: right;">49</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I60.hea</td>
-<td style="text-align: right;">60</td>
-<td style="text-align: right;">49</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 26</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I61.hea</td>
-<td style="text-align: right;">61</td>
-<td style="text-align: right;">49</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I62.hea</td>
-<td style="text-align: right;">62</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I63.hea</td>
-<td style="text-align: right;">63</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
+<td style="text-align: left;">patient 27</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I64.hea</td>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I65.hea</td>
-<td style="text-align: right;">65</td>
 <td style="text-align: right;">58</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I66.hea</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 28</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I67.hea</td>
-<td style="text-align: right;">67</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I68.hea</td>
-<td style="text-align: right;">68</td>
 <td style="text-align: right;">62</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I69.hea</td>
-<td style="text-align: right;">69</td>
-<td style="text-align: right;">62</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 29</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I70.hea</td>
-<td style="text-align: right;">70</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 30</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I71.hea</td>
-<td style="text-align: right;">71</td>
-<td style="text-align: right;">64</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I72.hea</td>
-<td style="text-align: right;">72</td>
 <td style="text-align: right;">73</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I73.hea</td>
-<td style="text-align: right;">73</td>
-<td style="text-align: right;">73</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
+<td style="text-align: left;">patient 31</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I74.hea</td>
-<td style="text-align: right;">74</td>
 <td style="text-align: right;">66</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Earlier MI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I75.hea</td>
-<td style="text-align: right;">75</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Earlier MI</td>
+<td style="text-align: left;">patient 32</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>breaks <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">seq</span>(<span class="dv">20</span>, <span class="fu">max</span>(headers<span class="sc">$</span>age) <span class="sc">+</span> <span class="dv">9</span>, <span class="at">by =</span> <span class="dv">10</span>))</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>headers <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age_bin =</span> <span class="fu">cut</span>(age, <span class="at">breaks =</span> breaks, <span class="at">right =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>headers <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(<span class="at">cols =</span> diagnoses, <span class="at">delim =</span> <span class="st">','</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">diagnosis =</span> diagnoses)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">10</span>) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span> <span class="fu">count</span>(diagnoses) <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 47%">
+<col style="width: 96%">
 <col style="width: 3%">
-<col style="width: 4%">
-<col style="width: 7%">
-<col style="width: 28%">
-<col style="width: 8%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">header_file</th>
-<th style="text-align: right;">id</th>
+<th style="text-align: left;">diagnoses</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Acute MI</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Coronary artery disease, arterial hypertension</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Coronary artery disease, arterial hypertension, left ventricular hypertrophy</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Earlier MI</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sinus node dysfunction</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>There are a considerable number of patients in the database that have provided ECG but for which no diagnosis is provided. It maybe that these are healthy patients or the diagnosis may have been omitted for other reasons.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>breaks <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">seq</span>(<span class="dv">20</span>, <span class="fu">max</span>(headers<span class="sc">$</span>age) <span class="sc">+</span> <span class="dv">9</span>, <span class="at">by =</span> <span class="dv">10</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>headers <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age_bin =</span> <span class="fu">cut</span>(age, <span class="at">breaks =</span> breaks, <span class="at">right =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>headers <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(<span class="at">cols =</span> diagnoses, <span class="at">delim =</span> <span class="st">','</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">diagnosis =</span> diagnoses)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">10</span>) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
 <th style="text-align: right;">age</th>
 <th style="text-align: left;">gender</th>
 <th style="text-align: left;">diagnosis</th>
+<th style="text-align: left;">pid</th>
 <th style="text-align: left;">age_bin</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">Coronary artery disease</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">arterial hypertension</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">Coronary artery disease</td>
-<td style="text-align: left;">(60,70]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">arterial hypertension</td>
-<td style="text-align: left;">(60,70]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I03.hea</td>
-<td style="text-align: right;">3</td>
 <td style="text-align: right;">59</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Acute MI</td>
+<td style="text-align: left;">patient 2</td>
 <td style="text-align: left;">(50,60]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I04.hea</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
-<td style="text-align: left;">(50,60]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I05.hea</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">59</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Acute MI</td>
-<td style="text-align: left;">(50,60]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I06.hea</td>
-<td style="text-align: right;">6</td>
 <td style="text-align: right;">80</td>
 <td style="text-align: left;">M</td>
 <td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 3</td>
 <td style="text-align: left;">(70,80]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I07.hea</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">80</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">Transient ischemic attack</td>
-<td style="text-align: left;">(70,80]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I08.hea</td>
-<td style="text-align: right;">8</td>
 <td style="text-align: right;">51</td>
 <td style="text-align: left;">F</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 4</td>
 <td style="text-align: left;">(50,60]</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 5</td>
+<td style="text-align: left;">(60,70]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 6</td>
+<td style="text-align: left;">(30,40]</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">57</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 7</td>
+<td style="text-align: left;">(50,60]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">64</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">Transient ischemic attack</td>
+<td style="text-align: left;">patient 8</td>
+<td style="text-align: left;">(60,70]</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">patient 9</td>
+<td style="text-align: left;">(0,20]</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<p>To calculate disparate impact and statistical parity (ignoring the point whether this makes sense), for the Python AIF360 package, we need to have both presence and absence of diagnoses for each patient. Do this in R as this is common idiom.</p>
+<p>To calculate disparate impact and statistical parity (ignoring the point whether this makes sense), for the Python AIF360 package, we need to have both presence and absence of diagnoses for each patient. <strong>Note that the patients without diagnosis will as such only have absence scores</strong> and this may result in artificial bias.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">presence =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="co"># Set presence so that pivot_wider fills in, filling in empty cells with</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> diagnosis, <span class="at">values_from =</span> presence, <span class="at">values_fill =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> <span class="co"># absence as 0.</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span><span class="fu">c</span>(header_file, id, age, gender, age_bin), <span class="at">names_to =</span> <span class="st">'diagnosis'</span>,</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">'present'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(diagnosis <span class="sc">!=</span> <span class="st">'NA'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diagnosis =</span> <span class="fu">trimws</span>(diagnosis))</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>dat <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">10</span>) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">presence =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="co"># Set presence so that pivot_wider fills in, filling in empty cells with</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> diagnosis, <span class="at">values_from =</span> presence, <span class="at">values_fill =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> <span class="co"># absence as 0.</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span><span class="fu">c</span>(pid, age, gender, age_bin), <span class="at">names_to =</span> <span class="st">'diagnosis'</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">'present'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(diagnosis <span class="sc">!=</span> <span class="st">'NA'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diagnosis =</span> <span class="fu">trimws</span>(diagnosis))</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>dat <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">10</span>) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 42%">
-<col style="width: 2%">
-<col style="width: 3%">
 <col style="width: 6%">
-<col style="width: 7%">
-<col style="width: 28%">
-<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 12%">
+<col style="width: 43%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">header_file</th>
-<th style="text-align: right;">id</th>
 <th style="text-align: right;">age</th>
 <th style="text-align: left;">gender</th>
+<th style="text-align: left;">pid</th>
 <th style="text-align: left;">age_bin</th>
 <th style="text-align: left;">diagnosis</th>
 <th style="text-align: right;">present</th>
@@ -858,94 +567,84 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">Coronary artery disease</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">arterial hypertension</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">Acute MI</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">Transient ischemic attack</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">left ventricular hypertrophy</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">Earlier MI</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I01.hea</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">65</td>
 <td style="text-align: left;">F</td>
+<td style="text-align: left;">patient 1</td>
 <td style="text-align: left;">(60,70]</td>
 <td style="text-align: left;">Sinus node dysfunction</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">(60,70]</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">patient 2</td>
+<td style="text-align: left;">(50,60]</td>
 <td style="text-align: left;">Coronary artery disease</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">(60,70]</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">patient 2</td>
+<td style="text-align: left;">(50,60]</td>
 <td style="text-align: left;">arterial hypertension</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/Users/nlv19419/tmp/incartdb/files//I02.hea</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: left;">(60,70]</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">patient 2</td>
+<td style="text-align: left;">(50,60]</td>
 <td style="text-align: left;">Acute MI</td>
-<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
 </tr>
 </tbody>
 </table>
@@ -956,11 +655,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Overview of data</h1>
 <p>Some simple plots and overviews show that there is not full, complete coverage. Unfortunately, with the few data fields available, calculating bias statistics may be difficult.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(id, gender) <span class="sc">%&gt;%</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(gender) <span class="sc">%&gt;%</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percentage =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(pid, gender) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(gender) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percentage =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -973,36 +672,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">F</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">46.7</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">43.8</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">M</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">53.3</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">56.2</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(id, gender, age) <span class="sc">%&gt;%</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">fill =</span> gender, <span class="at">colour =</span> gender)) <span class="sc">+</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    lemmens<span class="sc">::</span>theme_lemmens <span class="sc">+</span> <span class="fu">lemmens_brewer</span>()</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> p1 <span class="sc">+</span> <span class="fu">facet_wrap</span>(<span class="sc">~</span> gender)</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> p2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> headers <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(pid, gender, age) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">fill =</span> gender, <span class="at">colour =</span> gender)) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    lemmens<span class="sc">::</span>theme_lemmens <span class="sc">+</span> <span class="fu">lemmens_brewer</span>()</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> p1 <span class="sc">+</span> <span class="fu">facet_wrap</span>(<span class="sc">~</span> gender)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> p2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="incart_files/figure-html/age_histogram-1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="incart_files/figure-html/age_histogram-1.svg" class="img-fluid figure-img"></a></p>
+<p><a href="incart_files/figure-html/age_histogram-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="incart_files/figure-html/age_histogram-1.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span> <span class="fu">distinct</span>(id, age_bin) <span class="sc">%&gt;%</span> <span class="fu">count</span>(age_bin) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span> <span class="fu">distinct</span>(pid, age_bin) <span class="sc">%&gt;%</span> <span class="fu">count</span>(age_bin) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -1014,77 +713,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">(0,20]</td>
-<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">(30,40]</td>
-<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">(40,50]</td>
-<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">(50,60]</td>
-<td style="text-align: right;">26</td>
+<td style="text-align: right;">11</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">(60,70]</td>
-<td style="text-align: right;">21</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">(70,80]</td>
-<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(gender, diagnosis) <span class="sc">%&gt;%</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(diagnosis)) <span class="sc">%&gt;%</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_mosaic</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">product</span>(gender, diagnosis), <span class="at">fill =</span> gender)) <span class="sc">+</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Mosaic Plot of Gender and Diagnosis"</span>)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(gender, diagnosis) <span class="sc">%&gt;%</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> diagnosis, <span class="at">y =</span> gender, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Heatmap of Diagnosis by Gender"</span>, <span class="at">x =</span> <span class="st">"Diagnosis"</span>, <span class="at">y =</span> <span class="st">"Gender"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="incart_files/figure-html/diagnosis-per-gender-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="incart_files/figure-html/diagnosis-per-gender-1.png" class="img-fluid"></a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="incart_files/figure-html/diagnosis-per-gender-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="incart_files/figure-html/diagnosis-per-gender-2.png" class="img-fluid"></a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="do">## headers %&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="do">##   count(gender, diagnosis) %&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   filter(!is.na(diagnosis)) %&gt;%</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   ggplot() +</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="do">##     geom_mosaic(mapping = aes(x = product(gender, diagnosis), fill = gender)) +</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="do">##     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="do">##     labs(title = "Mosaic Plot of Gender and Diagnosis")</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(gender, diagnosis) <span class="sc">%&gt;%</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="do">## filter(!is.na(diagnosis)) %&gt;%</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> diagnosis, <span class="at">y =</span> gender, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Heatmap of Diagnosis by Gender"</span>, <span class="at">x =</span> <span class="st">"Diagnosis"</span>, <span class="at">y =</span> <span class="st">"Gender"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="incart_files/figure-html/diagnosis-per-gender-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="incart_files/figure-html/diagnosis-per-gender-1.png" class="img-fluid figure-img"></a></p>
+</figure>
 </div>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(age_bin, diagnosis) <span class="sc">%&gt;%</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> diagnosis, <span class="at">y =</span> age_bin, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Heatmap of Diagnosis by Gender"</span>, <span class="at">x =</span> <span class="st">"Diagnosis"</span>, <span class="at">y =</span> <span class="st">"Age bin"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>headers <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(age_bin, diagnosis) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">## filter(!is.na(diagnosis)) %&gt;%</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> diagnosis, <span class="at">y =</span> age_bin, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"white"</span>, <span class="at">high =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Heatmap of Diagnosis by Age Bin"</span>, <span class="at">x =</span> <span class="st">"Diagnosis"</span>, <span class="at">y =</span> <span class="st">"Age bin"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="incart_files/figure-html/diagnosis-per-age-bin-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="incart_files/figure-html/diagnosis-per-age-bin-1.png" class="img-fluid figure-img"></a></p>
+<p><a href="incart_files/figure-html/diagnosis-per-age-bin-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="incart_files/figure-html/diagnosis-per-age-bin-1.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Finally, save the processed data to disk so that they can be loaded in a Jupyter notebook that we need to use the Aequitas facilities.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(dat, <span class="at">file =</span> <span class="st">'incartdb_demographics.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(dat, <span class="at">file =</span> <span class="st">'incartdb_demographics.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 

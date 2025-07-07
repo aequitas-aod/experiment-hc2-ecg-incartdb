@@ -1,0 +1,75 @@
+---
+title: Visuals for repaired Incart db
+author: Paul Lemmens
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: simplex
+    fig-format: svg
+    default-image-extension: svg
+    dpi: 600
+    fig-asp: 0.618
+    fig-width: 8
+    # fig-height: 9
+    embed-resources: false
+mainfont: Source Sans Pro
+monofont: Source Code Pro
+fontsize: 14pt
+lightbox: auto
+execute:
+  echo: true
+  message: false
+  warning: false
+---
+
+```{r clear-workspace-and-prepare}
+#| label: set up script
+options(width=120)
+require(tidyverse)
+require(lemmens)
+require(patchwork)
+require(ggmosaic)
+palette <- 'Dark2'
+#palette <- 'Paired'
+```
+
+# Data loading 
+
+```{r}
+#| label: load the data
+data_location <- 'Results'
+age_dfr <- read_csv(file.path(data_location, 'data_age_repaired.csv'))
+gender_dfr <- read_csv(file.path(data_location, 'data_gender_repaired.csv'))
+```
+
+# Heatmap for age
+
+```{r}
+#| label: diagnosis-per-gender-repaired
+#| fig-format: png
+gender_dfr %>%
+  count(gender, diagnosis) %>%
+  ggplot(mapping = aes(x = diagnosis, y = gender, fill = n)) +
+    geom_tile() +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Heatmap of Diagnosis by Gender", x = "Diagnosis", y = "Gender",
+         caption = 'Repaired data set with synthetic data')
+```
+
+```{r}
+#| label: diagnosis-per-age-bin-repaired
+#| fig-format: png
+age_dfr %>%
+  count(age_bin, diagnosis) %>%
+  ggplot(mapping = aes(x = diagnosis, y = age_bin, fill = n)) +
+    geom_tile() +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Heatmap of Diagnosis by Age Bin", x = "Diagnosis", y = "Age bin",
+         caption = 'Repaired data set with synthetic data')
+```
+

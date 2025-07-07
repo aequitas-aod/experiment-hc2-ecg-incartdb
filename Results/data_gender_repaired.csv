@@ -1,0 +1,451 @@
+gender,age_bin,diagnosis,present
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(50,60]",Acute MI,absent
+M,"(50,60]",Coronary artery disease,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(0,20]",Acute MI,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(50,60]",Acute MI,absent
+M,"(40,50]",Sinus node dysfunction,absent
+M,"(40,50]",Earlier MI,absent
+M,"(50,60]",Acute MI,absent
+M,"(70,80]",Earlier MI,absent
+M,"(30,40]",Earlier MI,absent
+M,"(40,50]",Earlier MI,absent
+M,"(0,20]",arterial hypertension,absent
+M,"(50,60]",Coronary artery disease,absent
+M,"(30,40]",Acute MI,absent
+M,"(70,80]",arterial hypertension,absent
+M,"(60,70]",Acute MI,absent
+M,"(70,80]",Sinus node dysfunction,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(70,80]",Coronary artery disease,absent
+M,"(50,60]",Coronary artery disease,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(60,70]",arterial hypertension,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(40,50]",Sinus node dysfunction,absent
+M,"(40,50]",Transient ischemic attack,present
+M,"(50,60]",Coronary artery disease,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(70,80]",Earlier MI,absent
+M,"(60,70]",Earlier MI,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(50,60]",Sinus node dysfunction,present
+M,"(60,70]",Acute MI,present
+M,"(50,60]",Earlier MI,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(40,50]",Transient ischemic attack,absent
+M,"(50,60]",Earlier MI,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(30,40]",Earlier MI,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Acute MI,absent
+M,"(70,80]",Coronary artery disease,present
+M,"(50,60]",Acute MI,absent
+M,"(60,70]",Acute MI,absent
+M,"(0,20]",arterial hypertension,absent
+M,"(50,60]",Coronary artery disease,absent
+M,"(50,60]",Acute MI,absent
+M,"(50,60]",Coronary artery disease,present
+M,"(50,60]",Coronary artery disease,absent
+M,"(50,60]",Acute MI,absent
+M,"(70,80]",Earlier MI,present
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(50,60]",Acute MI,absent
+M,"(0,20]",Acute MI,absent
+M,"(40,50]",left ventricular hypertrophy,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(40,50]",Sinus node dysfunction,absent
+M,"(30,40]",Coronary artery disease,absent
+M,"(30,40]",left ventricular hypertrophy,absent
+M,"(40,50]",Sinus node dysfunction,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(70,80]",Earlier MI,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(60,70]",Acute MI,absent
+M,"(60,70]",Earlier MI,present
+M,"(0,20]",arterial hypertension,absent
+M,"(50,60]",Acute MI,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Coronary artery disease,present
+M,"(50,60]",Acute MI,present
+M,"(60,70]",Earlier MI,present
+M,"(50,60]",arterial hypertension,absent
+M,"(70,80]",Sinus node dysfunction,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(40,50]",Acute MI,absent
+M,"(60,70]",Earlier MI,present
+M,"(70,80]",Coronary artery disease,absent
+M,"(0,20]",Acute MI,absent
+M,"(70,80]",arterial hypertension,absent
+M,"(30,40]",Transient ischemic attack,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(60,70]",Earlier MI,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(50,60]",Acute MI,absent
+M,"(0,20]",Acute MI,absent
+M,"(30,40]",Sinus node dysfunction,absent
+M,"(50,60]",Earlier MI,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(30,40]",Transient ischemic attack,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(70,80]",left ventricular hypertrophy,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(50,60]",Acute MI,absent
+M,"(60,70]",Acute MI,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(60,70]",Acute MI,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(60,70]",Earlier MI,absent
+M,"(60,70]",Earlier MI,absent
+M,"(0,20]",Coronary artery disease,absent
+M,"(70,80]",Acute MI,absent
+M,"(60,70]",Earlier MI,absent
+M,"(40,50]",arterial hypertension,present
+M,"(50,60]",Coronary artery disease,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(30,40]",Coronary artery disease,present
+M,"(30,40]",Earlier MI,absent
+M,"(50,60]",Coronary artery disease,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(50,60]",Earlier MI,present
+M,"(50,60]",Earlier MI,absent
+M,"(30,40]",Coronary artery disease,absent
+M,"(60,70]",Sinus node dysfunction,present
+M,"(70,80]",Coronary artery disease,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(70,80]",Coronary artery disease,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(60,70]",arterial hypertension,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(50,60]",Acute MI,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(0,20]",Transient ischemic attack,absent
+M,"(50,60]",left ventricular hypertrophy,present
+M,"(50,60]",arterial hypertension,absent
+M,"(0,20]",Sinus node dysfunction,absent
+M,"(60,70]",Earlier MI,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(60,70]",arterial hypertension,absent
+M,"(70,80]",arterial hypertension,absent
+M,"(70,80]",arterial hypertension,absent
+M,"(50,60]",arterial hypertension,absent
+M,"(30,40]",Sinus node dysfunction,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(30,40]",left ventricular hypertrophy,absent
+M,"(60,70]",Acute MI,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(60,70]",arterial hypertension,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(50,60]",Acute MI,absent
+M,"(50,60]",Coronary artery disease,absent
+M,"(70,80]",Earlier MI,absent
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(60,70]",Acute MI,present
+M,"(40,50]",Earlier MI,absent
+M,"(0,20]",Sinus node dysfunction,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(50,60]",left ventricular hypertrophy,absent
+M,"(70,80]",Acute MI,absent
+M,"(50,60]",Acute MI,absent
+M,"(50,60]",Earlier MI,absent
+M,"(60,70]",Acute MI,absent
+M,"(60,70]",Earlier MI,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(30,40]",Sinus node dysfunction,absent
+M,"(50,60]",Sinus node dysfunction,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(30,40]",Sinus node dysfunction,absent
+M,"(40,50]",Sinus node dysfunction,present
+M,"(50,60]",arterial hypertension,absent
+M,"(40,50]",Coronary artery disease,absent
+M,"(60,70]",Coronary artery disease,absent
+M,"(60,70]",Sinus node dysfunction,absent
+M,"(40,50]",Acute MI,absent
+M,"(50,60]",Sinus node dysfunction,present
+M,"(70,80]",Earlier MI,absent
+M,"(0,20]",Acute MI,absent
+M,"(70,80]",Sinus node dysfunction,absent
+M,"(50,60]",Transient ischemic attack,absent
+M,"(30,40]",Coronary artery disease,absent
+M,"(40,50]",Coronary artery disease,absent
+M,"(30,40]",Sinus node dysfunction,present
+M,"(60,70]",left ventricular hypertrophy,absent
+M,"(60,70]",Transient ischemic attack,absent
+M,"(60,70]",Sinus node dysfunction,absent
+F,"(40,50]",Transient ischemic attack,absent
+F,"(0,20]",left ventricular hypertrophy,present
+F,"(70,80]",arterial hypertension,absent
+F,"(50,60]",Acute MI,present
+F,"(30,40]",Transient ischemic attack,absent
+F,"(60,70]",Sinus node dysfunction,absent
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(70,80]",Sinus node dysfunction,absent
+F,"(60,70]",Acute MI,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(60,70]",Acute MI,absent
+F,"(60,70]",Sinus node dysfunction,present
+F,"(40,50]",arterial hypertension,absent
+F,"(60,70]",Earlier MI,present
+F,"(60,70]",Sinus node dysfunction,absent
+F,"(40,50]",Sinus node dysfunction,present
+F,"(50,60]",Earlier MI,present
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(60,70]",Acute MI,absent
+F,"(30,40]",Coronary artery disease,absent
+F,"(70,80]",arterial hypertension,absent
+F,"(40,50]",Acute MI,present
+F,"(30,40]",arterial hypertension,absent
+F,"(70,80]",left ventricular hypertrophy,present
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(0,20]",left ventricular hypertrophy,present
+F,"(40,50]",Earlier MI,absent
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(50,60]",Coronary artery disease,absent
+F,"(40,50]",Sinus node dysfunction,absent
+F,"(60,70]",Transient ischemic attack,absent
+F,"(60,70]",Coronary artery disease,absent
+F,"(70,80]",Acute MI,present
+F,"(50,60]",Acute MI,absent
+F,"(40,50]",Acute MI,absent
+F,"(40,50]",Earlier MI,present
+F,"(50,60]",Acute MI,absent
+F,"(40,50]",Earlier MI,present
+F,"(40,50]",Coronary artery disease,present
+F,"(50,60]",Coronary artery disease,absent
+F,"(60,70]",Coronary artery disease,absent
+F,"(30,40]",Sinus node dysfunction,present
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(60,70]",Earlier MI,absent
+F,"(60,70]",Acute MI,absent
+F,"(70,80]",Coronary artery disease,absent
+F,"(60,70]",Acute MI,present
+F,"(30,40]",Transient ischemic attack,absent
+F,"(0,20]",arterial hypertension,absent
+F,"(40,50]",Sinus node dysfunction,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(0,20]",arterial hypertension,present
+F,"(50,60]",left ventricular hypertrophy,absent
+F,"(30,40]",Sinus node dysfunction,absent
+F,"(30,40]",Sinus node dysfunction,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(50,60]",Earlier MI,absent
+F,"(60,70]",arterial hypertension,absent
+F,"(50,60]",Coronary artery disease,absent
+F,"(60,70]",Acute MI,absent
+F,"(40,50]",Earlier MI,absent
+F,"(40,50]",left ventricular hypertrophy,absent
+F,"(40,50]",Acute MI,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(50,60]",left ventricular hypertrophy,absent
+F,"(70,80]",Coronary artery disease,present
+F,"(50,60]",arterial hypertension,absent
+F,"(70,80]",Coronary artery disease,absent
+F,"(40,50]",Acute MI,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(60,70]",Acute MI,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(50,60]",left ventricular hypertrophy,absent
+F,"(60,70]",Sinus node dysfunction,absent
+F,"(70,80]",Transient ischemic attack,absent
+F,"(30,40]",Transient ischemic attack,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(0,20]",Transient ischemic attack,present
+F,"(50,60]",Earlier MI,absent
+F,"(40,50]",Earlier MI,absent
+F,"(50,60]",Coronary artery disease,present
+F,"(50,60]",Transient ischemic attack,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",Transient ischemic attack,present
+F,"(30,40]",Earlier MI,absent
+F,"(50,60]",Acute MI,absent
+F,"(50,60]",Earlier MI,absent
+F,"(70,80]",Transient ischemic attack,present
+F,"(60,70]",Coronary artery disease,absent
+F,"(50,60]",Acute MI,absent
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(50,60]",Earlier MI,present
+F,"(40,50]",Acute MI,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(50,60]",left ventricular hypertrophy,absent
+F,"(30,40]",Earlier MI,absent
+F,"(60,70]",arterial hypertension,present
+F,"(40,50]",Coronary artery disease,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(70,80]",arterial hypertension,absent
+F,"(30,40]",Acute MI,absent
+F,"(50,60]",left ventricular hypertrophy,absent
+F,"(50,60]",Coronary artery disease,absent
+F,"(50,60]",Coronary artery disease,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(60,70]",Sinus node dysfunction,absent
+F,"(0,20]",left ventricular hypertrophy,absent
+F,"(60,70]",Acute MI,absent
+F,"(60,70]",Acute MI,absent
+F,"(50,60]",Earlier MI,absent
+F,"(50,60]",Acute MI,absent
+F,"(40,50]",Acute MI,absent
+F,"(30,40]",Sinus node dysfunction,absent
+F,"(60,70]",arterial hypertension,absent
+F,"(60,70]",Coronary artery disease,absent
+F,"(50,60]",Coronary artery disease,absent
+F,"(40,50]",Coronary artery disease,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(40,50]",Earlier MI,absent
+F,"(0,20]",Transient ischemic attack,absent
+F,"(70,80]",Transient ischemic attack,absent
+F,"(60,70]",Acute MI,absent
+F,"(50,60]",Earlier MI,absent
+F,"(60,70]",arterial hypertension,present
+F,"(30,40]",Sinus node dysfunction,present
+F,"(40,50]",Coronary artery disease,present
+F,"(30,40]",Earlier MI,absent
+F,"(40,50]",left ventricular hypertrophy,absent
+F,"(60,70]",Transient ischemic attack,absent
+F,"(70,80]",Sinus node dysfunction,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(60,70]",Earlier MI,absent
+F,"(70,80]",Acute MI,absent
+F,"(50,60]",Earlier MI,absent
+F,"(70,80]",arterial hypertension,absent
+F,"(50,60]",Acute MI,absent
+F,"(70,80]",Acute MI,absent
+F,"(40,50]",Coronary artery disease,absent
+F,"(50,60]",Sinus node dysfunction,present
+F,"(70,80]",arterial hypertension,present
+F,"(60,70]",Sinus node dysfunction,present
+F,"(30,40]",Coronary artery disease,absent
+F,"(30,40]",Transient ischemic attack,absent
+F,"(30,40]",Transient ischemic attack,present
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(40,50]",Earlier MI,absent
+F,"(70,80]",Earlier MI,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(40,50]",left ventricular hypertrophy,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(0,20]",left ventricular hypertrophy,present
+F,"(60,70]",Transient ischemic attack,absent
+F,"(30,40]",Transient ischemic attack,absent
+F,"(30,40]",left ventricular hypertrophy,absent
+F,"(40,50]",Transient ischemic attack,present
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",Acute MI,absent
+F,"(50,60]",Coronary artery disease,present
+F,"(30,40]",Acute MI,present
+F,"(30,40]",Transient ischemic attack,present
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(40,50]",Acute MI,absent
+F,"(60,70]",Earlier MI,absent
+F,"(40,50]",left ventricular hypertrophy,present
+F,"(50,60]",Transient ischemic attack,absent
+F,"(70,80]",left ventricular hypertrophy,absent
+F,"(40,50]",Earlier MI,absent
+F,"(60,70]",Sinus node dysfunction,absent
+F,"(30,40]",left ventricular hypertrophy,absent
+F,"(30,40]",Earlier MI,absent
+F,"(0,20]",Transient ischemic attack,absent
+F,"(60,70]",Acute MI,present
+F,"(60,70]",Transient ischemic attack,absent
+F,"(70,80]",Coronary artery disease,absent
+F,"(60,70]",Coronary artery disease,absent
+F,"(70,80]",Sinus node dysfunction,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",Transient ischemic attack,absent
+F,"(50,60]",left ventricular hypertrophy,present
+F,"(30,40]",Sinus node dysfunction,absent
+F,"(30,40]",Earlier MI,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",Acute MI,absent
+F,"(60,70]",left ventricular hypertrophy,absent
+F,"(50,60]",Earlier MI,absent
+F,"(70,80]",Coronary artery disease,absent
+F,"(60,70]",Earlier MI,absent
+F,"(0,20]",Sinus node dysfunction,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(60,70]",Acute MI,absent
+F,"(30,40]",left ventricular hypertrophy,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(50,60]",Earlier MI,absent
+F,"(0,20]",Earlier MI,present
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(50,60]",left ventricular hypertrophy,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(70,80]",left ventricular hypertrophy,absent
+F,"(60,70]",arterial hypertension,present
+F,"(60,70]",Transient ischemic attack,absent
+F,"(40,50]",Sinus node dysfunction,present
+F,"(70,80]",Acute MI,present
+F,"(50,60]",Coronary artery disease,absent
+F,"(50,60]",Coronary artery disease,present
+F,"(60,70]",Acute MI,absent
+F,"(0,20]",Coronary artery disease,absent
+F,"(50,60]",Sinus node dysfunction,absent
+F,"(70,80]",Acute MI,absent
+F,"(60,70]",arterial hypertension,present
+F,"(60,70]",Transient ischemic attack,present
+F,"(30,40]",Transient ischemic attack,absent
+F,"(0,20]",Acute MI,absent
+F,"(60,70]",arterial hypertension,absent
+F,"(60,70]",Coronary artery disease,absent
+F,"(60,70]",Earlier MI,absent
+F,"(70,80]",left ventricular hypertrophy,present
+F,"(40,50]",Transient ischemic attack,absent
+F,"(40,50]",Sinus node dysfunction,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(70,80]",arterial hypertension,absent
+F,"(60,70]",left ventricular hypertrophy,present
+F,"(30,40]",Earlier MI,present
+F,"(30,40]",arterial hypertension,absent
+F,"(40,50]",left ventricular hypertrophy,absent
+F,"(70,80]",Sinus node dysfunction,present
+F,"(60,70]",arterial hypertension,absent
+F,"(30,40]",arterial hypertension,absent
+F,"(60,70]",Transient ischemic attack,present
+F,"(30,40]",Coronary artery disease,absent
+F,"(60,70]",left ventricular hypertrophy,present
+F,"(50,60]",Transient ischemic attack,absent
+F,"(50,60]",arterial hypertension,absent
+F,"(50,60]",Acute MI,absent
+F,"(70,80]",Transient ischemic attack,present
+F,"(50,60]",Earlier MI,absent
+F,"(40,50]",Sinus node dysfunction,absent
+F,"(60,70]",Sinus node dysfunction,absent
+F,"(70,80]",Coronary artery disease,absent
+F,"(50,60]",Coronary artery disease,absent
+F,"(0,20]",Coronary artery disease,absent
+F,"(30,40]",Coronary artery disease,absent
+F,"(60,70]",Transient ischemic attack,absent
+F,"(0,20]",Acute MI,present
+F,"(40,50]",left ventricular hypertrophy,absent

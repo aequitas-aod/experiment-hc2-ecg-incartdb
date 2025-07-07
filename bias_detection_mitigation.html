@@ -7510,12 +7510,12 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -7525,12 +7525,26 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7548,24 +7562,6 @@ a.anchor-link {
 <span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">"Warning"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>2025-07-04 12:37:13.638500: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-/Users/nlv19419/.pyenv/versions/3.11.12/envs/incartdb-venv/lib/python3.11/site-packages/torch/_functorch/deprecated.py:61: UserWarning:
-
-We've integrated functorch into PyTorch. As the final step of the integration, functorch.vmap is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch &gt;= 2.3. Please use torch.vmap instead; see the PyTorch 2.0 release notes and/or the torch.func migration guide for more details https://pytorch.org/docs/master/func.migrating.html
-
-</pre>
 </div>
 </div>
 </div>
@@ -7597,7 +7593,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="s2">"incartdb_demographics"</span>
@@ -7613,7 +7609,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7744,7 +7740,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_processed</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">process_full_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">dataset_name</span><span class="o">=</span><span class="n">dataset</span><span class="p">)</span>
@@ -7759,7 +7755,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7901,7 +7897,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">selected_columns</span> <span class="o">=</span> <span class="p">[</span>
@@ -7943,7 +7939,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_processed</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'pid'</span><span class="p">,</span> <span class="s1">'gender'</span><span class="p">])[</span><span class="s1">'gender'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -7957,7 +7953,7 @@ We've integrated functorch into PyTorch. As the final step of the integration, f
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>gender
 1    0.5625
@@ -7972,7 +7968,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_processed</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'pid'</span><span class="p">,</span> <span class="s1">'age_bin'</span><span class="p">])[</span><span class="s1">'age_bin'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -7986,7 +7982,7 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>age_bin
 3    0.34375
@@ -8005,7 +8001,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_processed</span><span class="p">[</span><span class="n">df_processed</span><span class="p">[</span><span class="s1">'present'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span> \
@@ -8021,7 +8017,7 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>diagnosis
 1    0.241379
@@ -8060,7 +8056,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">gender_bias</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">show_bias</span><span class="p">(</span><span class="n">df_processed</span><span class="p">,</span> <span class="s2">"gender"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">plot_histogram</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -8091,7 +8087,7 @@ divide by zero encountered in scalar divide
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8192,7 +8188,7 @@ divide by zero encountered in scalar divide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># diagnoses = sorted(df_processed.diagnosis.unique())</span>
@@ -8212,7 +8208,7 @@ divide by zero encountered in scalar divide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_diag1</span> <span class="o">=</span> <span class="n">df_processed</span><span class="p">[</span><span class="n">df_processed</span><span class="p">[</span><span class="s1">'diagnosis'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -8229,7 +8225,7 @@ divide by zero encountered in scalar divide
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>gender  present
 1       0          0.53125
@@ -8246,7 +8242,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sampler</span> <span class="o">=</span> <span class="n">synth</span><span class="o">.</span><span class="n">MultiNomSampler</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">'M_0'</span><span class="p">,</span> <span class="s1">'F_0'</span><span class="p">,</span> <span class="s1">'F_1'</span><span class="p">,</span> <span class="s1">'M_1'</span><span class="p">],</span>
@@ -8267,7 +8263,7 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8296,23 +8292,23 @@ Name: proportion, dtype: float64</pre>
 <tbody>
 <tr>
 <th>0</th>
+<td>F_1</td>
+<td>F</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
 <td>M_0</td>
 <td>M</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<th>1</th>
-<td>F_0</td>
-<td>F</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
 <th>2</th>
-<td>F_1</td>
-<td>F</td>
-<td>1</td>
+<td>M_0</td>
+<td>M</td>
+<td>0</td>
 <td>1</td>
 </tr>
 <tr>
@@ -8324,9 +8320,9 @@ Name: proportion, dtype: float64</pre>
 </tr>
 <tr>
 <th>4</th>
-<td>M_1</td>
+<td>M_0</td>
 <td>M</td>
-<td>1</td>
+<td>0</td>
 <td>1</td>
 </tr>
 <tr>
@@ -8338,36 +8334,36 @@ Name: proportion, dtype: float64</pre>
 </tr>
 <tr>
 <th>70</th>
-<td>M_0</td>
-<td>M</td>
+<td>F_0</td>
+<td>F</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
 <th>71</th>
+<td>F_0</td>
+<td>F</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>72</th>
 <td>M_0</td>
 <td>M</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<th>72</th>
+<th>73</th>
 <td>F_0</td>
 <td>F</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<th>73</th>
-<td>M_1</td>
-<td>M</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
 <th>74</th>
-<td>F_0</td>
-<td>F</td>
+<td>M_0</td>
+<td>M</td>
 <td>0</td>
 <td>1</td>
 </tr>
@@ -8384,7 +8380,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_gen</span><span class="p">[[</span><span class="s1">'gender'</span><span class="p">,</span> <span class="s1">'present'</span><span class="p">]]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
@@ -8398,13 +8394,13 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>gender  present
-F       1          0.280000
-M       0          0.266667
-F       0          0.226667
-M       1          0.226667
+M       1          0.306667
+        0          0.266667
+F       1          0.253333
+        0          0.173333
 Name: proportion, dtype: float64</pre>
 </div>
 </div>
@@ -8426,7 +8422,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_gen</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">transform_gender</span><span class="p">(</span><span class="n">df_gen</span><span class="p">,</span> <span class="n">var</span><span class="o">=</span><span class="s2">"gender"</span><span class="p">)</span>
@@ -8441,7 +8437,7 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8471,9 +8467,9 @@ Name: proportion, dtype: float64</pre>
 <tr>
 <th>0</th>
 <td>1</td>
-<td>1.202786</td>
-<td>0.093172</td>
-<td>0.047207</td>
+<td>1.110054</td>
+<td>0.058866</td>
+<td>0.025116</td>
 </tr>
 </tbody>
 </table>
@@ -8500,7 +8496,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_multivar</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'pid'</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">])</span>
@@ -8516,7 +8512,7 @@ Name: proportion, dtype: float64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8633,7 +8629,7 @@ Name: proportion, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">metadata</span> <span class="o">=</span> <span class="n">Metadata</span><span class="o">.</span><span class="n">detect_from_dataframe</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_multivar</span><span class="p">,</span> <span class="n">table_name</span><span class="o">=</span><span class="s1">'df_multivar'</span><span class="p">)</span>
@@ -8661,7 +8657,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'gender': {'distribution': 'beta',
   'learned_parameters': {'loc': 0.0010063780062828226,
@@ -8692,7 +8688,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">synthesizer</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">num_rows</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -8706,7 +8702,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8885,7 +8881,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">men</span> <span class="o">=</span> <span class="n">Condition</span><span class="p">(</span><span class="n">num_rows</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">column_values</span><span class="o">=</span><span class="p">{</span><span class="s1">'gender'</span><span class="p">:</span> <span class="s1">'M'</span><span class="p">})</span>
@@ -8904,12 +8900,12 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Sampling conditions: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 450/450 [00:00&lt;00:00, 7196.54it/s]
+<pre>Sampling conditions: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 450/450 [00:00&lt;00:00, 7162.76it/s]
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9021,6 +9017,20 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">conditional_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'Results/data_gender_repaired.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'UTF-8'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9037,7 +9047,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_test</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">process_full_dataset</span><span class="p">(</span><span class="n">conditional_df</span><span class="p">,</span> <span class="n">dataset_name</span><span class="o">=</span><span class="s1">'multivar'</span><span class="p">)</span>
@@ -9052,7 +9062,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">multivar_polarized_bias</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">show_bias</span><span class="p">(</span><span class="n">df_test</span><span class="p">,</span> <span class="s2">"gender"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">plot_histogram</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -9068,7 +9078,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9188,7 +9198,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">enc_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"utils/encodings/incartdb_demographics_diagnosis_encoding.json"</span><span class="p">)</span>
@@ -9204,7 +9214,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ref_age</span> <span class="o">=</span> <span class="mi">2</span>
@@ -9698,7 +9708,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">age0</span> <span class="o">=</span> <span class="n">Condition</span><span class="p">(</span><span class="n">num_rows</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">column_values</span><span class="o">=</span><span class="p">{</span><span class="s1">'age_bin'</span><span class="p">:</span> <span class="s1">'(0,20]'</span><span class="p">})</span>
@@ -9721,12 +9731,12 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Sampling conditions: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [00:00&lt;00:00, 6318.25it/s]
+<pre>Sampling conditions: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [00:00&lt;00:00, 7117.43it/s]
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9755,23 +9765,23 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <tbody>
 <tr>
 <th>0</th>
-<td>F</td>
+<td>M</td>
+<td>(0,20]</td>
+<td>Transient ischemic attack</td>
+<td>absent</td>
+</tr>
+<tr>
+<th>1</th>
+<td>M</td>
 <td>(0,20]</td>
 <td>Earlier MI</td>
 <td>absent</td>
 </tr>
 <tr>
-<th>1</th>
-<td>F</td>
-<td>(0,20]</td>
-<td>Transient ischemic attack</td>
-<td>present</td>
-</tr>
-<tr>
 <th>2</th>
 <td>F</td>
 <td>(0,20]</td>
-<td>Sinus node dysfunction</td>
+<td>Coronary artery disease</td>
 <td>absent</td>
 </tr>
 <tr>
@@ -9783,9 +9793,9 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </tr>
 <tr>
 <th>4</th>
-<td>M</td>
+<td>F</td>
 <td>(0,20]</td>
-<td>left ventricular hypertrophy</td>
+<td>Earlier MI</td>
 <td>absent</td>
 </tr>
 <tr>
@@ -9797,35 +9807,35 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </tr>
 <tr>
 <th>1195</th>
-<td>F</td>
+<td>M</td>
 <td>(70,80]</td>
-<td>Acute MI</td>
+<td>Earlier MI</td>
 <td>absent</td>
 </tr>
 <tr>
 <th>1196</th>
-<td>M</td>
+<td>F</td>
 <td>(70,80]</td>
-<td>arterial hypertension</td>
+<td>Transient ischemic attack</td>
 <td>absent</td>
 </tr>
 <tr>
 <th>1197</th>
 <td>M</td>
 <td>(70,80]</td>
-<td>Acute MI</td>
+<td>Earlier MI</td>
 <td>absent</td>
 </tr>
 <tr>
 <th>1198</th>
 <td>M</td>
 <td>(70,80]</td>
-<td>Sinus node dysfunction</td>
+<td>Acute MI</td>
 <td>absent</td>
 </tr>
 <tr>
 <th>1199</th>
-<td>M</td>
+<td>F</td>
 <td>(70,80]</td>
 <td>arterial hypertension</td>
 <td>absent</td>
@@ -9843,7 +9853,50 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">conditional_df</span><span class="p">[</span><span class="s1">'present'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>present
+absent     1011
+present     189
+Name: count, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">conditional_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'Results/data_age_repaired.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'UTF-8'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_test</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">process_full_dataset</span><span class="p">(</span><span class="n">conditional_df</span><span class="p">,</span> <span class="n">dataset_name</span><span class="o">=</span><span class="s1">'multivar'</span><span class="p">)</span>
@@ -9859,7 +9912,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9888,23 +9941,23 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <tbody>
 <tr>
 <th>0</th>
+<td>1</td>
 <td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>1</td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
 </tr>
 <tr>
-<th>1</th>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>1</td>
-</tr>
-<tr>
 <th>2</th>
 <td>0</td>
 <td>0</td>
-<td>3</td>
+<td>1</td>
 <td>0</td>
 </tr>
 <tr>
@@ -9916,9 +9969,9 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </tr>
 <tr>
 <th>4</th>
-<td>1</td>
 <td>0</td>
-<td>6</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 </tr>
 <tr>
@@ -9930,35 +9983,35 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 </tr>
 <tr>
 <th>1195</th>
-<td>0</td>
+<td>1</td>
 <td>5</td>
-<td>0</td>
+<td>2</td>
 <td>0</td>
 </tr>
 <tr>
 <th>1196</th>
-<td>1</td>
+<td>0</td>
 <td>5</td>
-<td>5</td>
+<td>4</td>
 <td>0</td>
 </tr>
 <tr>
 <th>1197</th>
 <td>1</td>
 <td>5</td>
-<td>0</td>
+<td>2</td>
 <td>0</td>
 </tr>
 <tr>
 <th>1198</th>
 <td>1</td>
 <td>5</td>
-<td>3</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
 <th>1199</th>
-<td>1</td>
+<td>0</td>
 <td>5</td>
 <td>5</td>
 <td>0</td>
@@ -9976,7 +10029,7 @@ We strongly recommend saving the metadata using 'save_to_json' for replicability
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">age_bias</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -10018,7 +10071,7 @@ Comparing age bins 2 and 5
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10063,79 +10116,79 @@ Comparing age bins 2 and 5
 <tr>
 <th>Acute MI</th>
 <td>5.0</td>
-<td>1.249580</td>
-<td>0.572627</td>
-<td>0.703704</td>
-<td>0.879630</td>
-<td>0.938272</td>
-<td>1.747126</td>
-<td>1.979167</td>
+<td>0.767258</td>
+<td>0.206545</td>
+<td>0.592593</td>
+<td>0.606061</td>
+<td>0.685714</td>
+<td>0.875000</td>
+<td>1.076923</td>
 </tr>
 <tr>
 <th>Coronary artery disease</th>
 <td>5.0</td>
-<td>0.696762</td>
-<td>0.212062</td>
-<td>0.568966</td>
-<td>0.568966</td>
-<td>0.611111</td>
-<td>0.665323</td>
-<td>1.069444</td>
+<td>0.796182</td>
+<td>0.113280</td>
+<td>0.672269</td>
+<td>0.721805</td>
+<td>0.761905</td>
+<td>0.879121</td>
+<td>0.945813</td>
 </tr>
 <tr>
 <th>Earlier MI</th>
 <td>5.0</td>
-<td>0.508528</td>
-<td>0.120607</td>
-<td>0.352941</td>
-<td>0.461538</td>
-<td>0.516129</td>
-<td>0.526316</td>
-<td>0.685714</td>
+<td>0.842086</td>
+<td>0.298410</td>
+<td>0.611111</td>
+<td>0.634615</td>
+<td>0.717391</td>
+<td>0.916667</td>
+<td>1.330645</td>
 </tr>
 <tr>
 <th>Sinus node dysfunction</th>
 <td>5.0</td>
-<td>0.528859</td>
-<td>0.367775</td>
-<td>0.173333</td>
-<td>0.208000</td>
-<td>0.433333</td>
-<td>0.866667</td>
-<td>0.962963</td>
+<td>0.908513</td>
+<td>0.138551</td>
+<td>0.694444</td>
+<td>0.869565</td>
+<td>0.925926</td>
+<td>1.000000</td>
+<td>1.052632</td>
 </tr>
 <tr>
 <th>Transient ischemic attack</th>
 <td>5.0</td>
-<td>0.878934</td>
-<td>0.409777</td>
-<td>0.480000</td>
-<td>0.692308</td>
-<td>0.800000</td>
-<td>0.857143</td>
-<td>1.565217</td>
+<td>0.980207</td>
+<td>0.633819</td>
+<td>0.296296</td>
+<td>0.516129</td>
+<td>1.066667</td>
+<td>1.090909</td>
+<td>1.931034</td>
 </tr>
 <tr>
 <th>arterial hypertension</th>
 <td>5.0</td>
-<td>0.485104</td>
-<td>0.386494</td>
-<td>0.000000</td>
-<td>0.305556</td>
-<td>0.399194</td>
-<td>0.717391</td>
-<td>1.003378</td>
+<td>0.773374</td>
+<td>0.191078</td>
+<td>0.483871</td>
+<td>0.714286</td>
+<td>0.781250</td>
+<td>0.925926</td>
+<td>0.961538</td>
 </tr>
 <tr>
 <th>left ventricular hypertrophy</th>
 <td>5.0</td>
-<td>0.521377</td>
-<td>0.430581</td>
-<td>0.138462</td>
-<td>0.225000</td>
-<td>0.313043</td>
-<td>0.778378</td>
-<td>1.152000</td>
+<td>0.726826</td>
+<td>0.370487</td>
+<td>0.367816</td>
+<td>0.571429</td>
+<td>0.571429</td>
+<td>0.790123</td>
+<td>1.333333</td>
 </tr>
 </tbody>
 </table>

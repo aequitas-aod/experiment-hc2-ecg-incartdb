@@ -201,5 +201,6 @@ Finally, save the processed data to disk so that they can be loaded in a Jupyter
 
 ```{r}
 #| label: save to disk
-readr::write_csv(dat, file = 'incartdb_demographics.csv')
+readr::write_csv(headers, file = 'incartdb_demographics_collapsed.csv')
+readr::write_csv(dat, file = 'incartdb_demographics_expanded.csv')
 ```

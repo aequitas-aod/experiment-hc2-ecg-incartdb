@@ -1,0 +1,225 @@
+age,gender,pid,diagnosis,present,gxd,age_bin
+65,F,patient 1,Coronary artery disease,YES,F_Coronary artery disease,60-70
+65,F,patient 1,arterial hypertension,YES,F_arterial hypertension,60-70
+65,F,patient 1,Acute MI,NO,F_Acute MI,60-70
+65,F,patient 1,Transient ischemic attack,NO,F_Transient ischemic attack,60-70
+65,F,patient 1,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,60-70
+65,F,patient 1,Earlier MI,NO,F_Earlier MI,60-70
+65,F,patient 1,Sinus node dysfunction,NO,F_Sinus node dysfunction,60-70
+59,M,patient 2,Coronary artery disease,NO,M_Coronary artery disease,50-60
+59,M,patient 2,arterial hypertension,NO,M_arterial hypertension,50-60
+59,M,patient 2,Acute MI,YES,M_Acute MI,50-60
+59,M,patient 2,Transient ischemic attack,NO,M_Transient ischemic attack,50-60
+59,M,patient 2,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,50-60
+59,M,patient 2,Earlier MI,NO,M_Earlier MI,50-60
+59,M,patient 2,Sinus node dysfunction,NO,M_Sinus node dysfunction,50-60
+80,M,patient 3,Coronary artery disease,NO,M_Coronary artery disease,70-80
+80,M,patient 3,arterial hypertension,NO,M_arterial hypertension,70-80
+80,M,patient 3,Acute MI,NO,M_Acute MI,70-80
+80,M,patient 3,Transient ischemic attack,YES,M_Transient ischemic attack,70-80
+80,M,patient 3,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,70-80
+80,M,patient 3,Earlier MI,NO,M_Earlier MI,70-80
+80,M,patient 3,Sinus node dysfunction,NO,M_Sinus node dysfunction,70-80
+51,F,patient 4,Coronary artery disease,NO,F_Coronary artery disease,50-60
+51,F,patient 4,arterial hypertension,NO,F_arterial hypertension,50-60
+51,F,patient 4,Acute MI,NO,F_Acute MI,50-60
+51,F,patient 4,Transient ischemic attack,NO,F_Transient ischemic attack,50-60
+51,F,patient 4,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,50-60
+51,F,patient 4,Earlier MI,NO,F_Earlier MI,50-60
+51,F,patient 4,Sinus node dysfunction,NO,F_Sinus node dysfunction,50-60
+68,M,patient 5,Coronary artery disease,NO,M_Coronary artery disease,60-70
+68,M,patient 5,arterial hypertension,NO,M_arterial hypertension,60-70
+68,M,patient 5,Acute MI,NO,M_Acute MI,60-70
+68,M,patient 5,Transient ischemic attack,NO,M_Transient ischemic attack,60-70
+68,M,patient 5,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+68,M,patient 5,Earlier MI,NO,M_Earlier MI,60-70
+68,M,patient 5,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
+39,F,patient 6,Coronary artery disease,NO,F_Coronary artery disease,30-40
+39,F,patient 6,arterial hypertension,NO,F_arterial hypertension,30-40
+39,F,patient 6,Acute MI,NO,F_Acute MI,30-40
+39,F,patient 6,Transient ischemic attack,NO,F_Transient ischemic attack,30-40
+39,F,patient 6,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,30-40
+39,F,patient 6,Earlier MI,NO,F_Earlier MI,30-40
+39,F,patient 6,Sinus node dysfunction,NO,F_Sinus node dysfunction,30-40
+57,M,patient 7,Coronary artery disease,NO,M_Coronary artery disease,50-60
+57,M,patient 7,arterial hypertension,NO,M_arterial hypertension,50-60
+57,M,patient 7,Acute MI,NO,M_Acute MI,50-60
+57,M,patient 7,Transient ischemic attack,YES,M_Transient ischemic attack,50-60
+57,M,patient 7,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,50-60
+57,M,patient 7,Earlier MI,NO,M_Earlier MI,50-60
+57,M,patient 7,Sinus node dysfunction,NO,M_Sinus node dysfunction,50-60
+64,M,patient 8,Coronary artery disease,NO,M_Coronary artery disease,60-70
+64,M,patient 8,arterial hypertension,NO,M_arterial hypertension,60-70
+64,M,patient 8,Acute MI,NO,M_Acute MI,60-70
+64,M,patient 8,Transient ischemic attack,YES,M_Transient ischemic attack,60-70
+64,M,patient 8,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+64,M,patient 8,Earlier MI,NO,M_Earlier MI,60-70
+64,M,patient 8,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
+18,F,patient 9,Coronary artery disease,NO,F_Coronary artery disease,0-20
+18,F,patient 9,arterial hypertension,NO,F_arterial hypertension,0-20
+18,F,patient 9,Acute MI,NO,F_Acute MI,0-20
+18,F,patient 9,Transient ischemic attack,NO,F_Transient ischemic attack,0-20
+18,F,patient 9,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,0-20
+18,F,patient 9,Earlier MI,NO,F_Earlier MI,0-20
+18,F,patient 9,Sinus node dysfunction,NO,F_Sinus node dysfunction,0-20
+59,F,patient 10,Coronary artery disease,YES,F_Coronary artery disease,50-60
+59,F,patient 10,arterial hypertension,YES,F_arterial hypertension,50-60
+59,F,patient 10,Acute MI,NO,F_Acute MI,50-60
+59,F,patient 10,Transient ischemic attack,NO,F_Transient ischemic attack,50-60
+59,F,patient 10,left ventricular hypertrophy,YES,F_left ventricular hypertrophy,50-60
+59,F,patient 10,Earlier MI,NO,F_Earlier MI,50-60
+59,F,patient 10,Sinus node dysfunction,NO,F_Sinus node dysfunction,50-60
+52,M,patient 11,Coronary artery disease,NO,M_Coronary artery disease,50-60
+52,M,patient 11,arterial hypertension,NO,M_arterial hypertension,50-60
+52,M,patient 11,Acute MI,NO,M_Acute MI,50-60
+52,M,patient 11,Transient ischemic attack,NO,M_Transient ischemic attack,50-60
+52,M,patient 11,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,50-60
+52,M,patient 11,Earlier MI,YES,M_Earlier MI,50-60
+52,M,patient 11,Sinus node dysfunction,NO,M_Sinus node dysfunction,50-60
+66,F,patient 12,Coronary artery disease,NO,F_Coronary artery disease,60-70
+66,F,patient 12,arterial hypertension,NO,F_arterial hypertension,60-70
+66,F,patient 12,Acute MI,NO,F_Acute MI,60-70
+66,F,patient 12,Transient ischemic attack,NO,F_Transient ischemic attack,60-70
+66,F,patient 12,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,60-70
+66,F,patient 12,Earlier MI,NO,F_Earlier MI,60-70
+66,F,patient 12,Sinus node dysfunction,YES,F_Sinus node dysfunction,60-70
+60,M,patient 13,Coronary artery disease,NO,M_Coronary artery disease,50-60
+60,M,patient 13,arterial hypertension,NO,M_arterial hypertension,50-60
+60,M,patient 13,Acute MI,NO,M_Acute MI,50-60
+60,M,patient 13,Transient ischemic attack,NO,M_Transient ischemic attack,50-60
+60,M,patient 13,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,50-60
+60,M,patient 13,Earlier MI,NO,M_Earlier MI,50-60
+60,M,patient 13,Sinus node dysfunction,NO,M_Sinus node dysfunction,50-60
+41,F,patient 14,Coronary artery disease,NO,F_Coronary artery disease,40-50
+41,F,patient 14,arterial hypertension,NO,F_arterial hypertension,40-50
+41,F,patient 14,Acute MI,NO,F_Acute MI,40-50
+41,F,patient 14,Transient ischemic attack,NO,F_Transient ischemic attack,40-50
+41,F,patient 14,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,40-50
+41,F,patient 14,Earlier MI,NO,F_Earlier MI,40-50
+41,F,patient 14,Sinus node dysfunction,NO,F_Sinus node dysfunction,40-50
+40,M,patient 15,Coronary artery disease,NO,M_Coronary artery disease,30-40
+40,M,patient 15,arterial hypertension,NO,M_arterial hypertension,30-40
+40,M,patient 15,Acute MI,NO,M_Acute MI,30-40
+40,M,patient 15,Transient ischemic attack,NO,M_Transient ischemic attack,30-40
+40,M,patient 15,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,30-40
+40,M,patient 15,Earlier MI,NO,M_Earlier MI,30-40
+40,M,patient 15,Sinus node dysfunction,NO,M_Sinus node dysfunction,30-40
+38,F,patient 16,Coronary artery disease,YES,F_Coronary artery disease,30-40
+38,F,patient 16,arterial hypertension,YES,F_arterial hypertension,30-40
+38,F,patient 16,Acute MI,NO,F_Acute MI,30-40
+38,F,patient 16,Transient ischemic attack,NO,F_Transient ischemic attack,30-40
+38,F,patient 16,left ventricular hypertrophy,YES,F_left ventricular hypertrophy,30-40
+38,F,patient 16,Earlier MI,NO,F_Earlier MI,30-40
+38,F,patient 16,Sinus node dysfunction,NO,F_Sinus node dysfunction,30-40
+60,F,patient 17,Coronary artery disease,YES,F_Coronary artery disease,50-60
+60,F,patient 17,arterial hypertension,YES,F_arterial hypertension,50-60
+60,F,patient 17,Acute MI,NO,F_Acute MI,50-60
+60,F,patient 17,Transient ischemic attack,NO,F_Transient ischemic attack,50-60
+60,F,patient 17,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,50-60
+60,F,patient 17,Earlier MI,NO,F_Earlier MI,50-60
+60,F,patient 17,Sinus node dysfunction,NO,F_Sinus node dysfunction,50-60
+66,M,patient 18,Coronary artery disease,NO,M_Coronary artery disease,60-70
+66,M,patient 18,arterial hypertension,NO,M_arterial hypertension,60-70
+66,M,patient 18,Acute MI,NO,M_Acute MI,60-70
+66,M,patient 18,Transient ischemic attack,YES,M_Transient ischemic attack,60-70
+66,M,patient 18,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+66,M,patient 18,Earlier MI,NO,M_Earlier MI,60-70
+66,M,patient 18,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
+19,M,patient 19,Coronary artery disease,NO,M_Coronary artery disease,0-20
+19,M,patient 19,arterial hypertension,NO,M_arterial hypertension,0-20
+19,M,patient 19,Acute MI,NO,M_Acute MI,0-20
+19,M,patient 19,Transient ischemic attack,NO,M_Transient ischemic attack,0-20
+19,M,patient 19,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,0-20
+19,M,patient 19,Earlier MI,NO,M_Earlier MI,0-20
+19,M,patient 19,Sinus node dysfunction,NO,M_Sinus node dysfunction,0-20
+53,F,patient 20,Coronary artery disease,YES,F_Coronary artery disease,50-60
+53,F,patient 20,arterial hypertension,YES,F_arterial hypertension,50-60
+53,F,patient 20,Acute MI,NO,F_Acute MI,50-60
+53,F,patient 20,Transient ischemic attack,NO,F_Transient ischemic attack,50-60
+53,F,patient 20,left ventricular hypertrophy,YES,F_left ventricular hypertrophy,50-60
+53,F,patient 20,Earlier MI,NO,F_Earlier MI,50-60
+53,F,patient 20,Sinus node dysfunction,NO,F_Sinus node dysfunction,50-60
+68,F,patient 21,Coronary artery disease,NO,F_Coronary artery disease,60-70
+68,F,patient 21,arterial hypertension,NO,F_arterial hypertension,60-70
+68,F,patient 21,Acute MI,NO,F_Acute MI,60-70
+68,F,patient 21,Transient ischemic attack,NO,F_Transient ischemic attack,60-70
+68,F,patient 21,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,60-70
+68,F,patient 21,Earlier MI,YES,F_Earlier MI,60-70
+68,F,patient 21,Sinus node dysfunction,NO,F_Sinus node dysfunction,60-70
+70,M,patient 22,Coronary artery disease,NO,M_Coronary artery disease,60-70
+70,M,patient 22,arterial hypertension,NO,M_arterial hypertension,60-70
+70,M,patient 22,Acute MI,NO,M_Acute MI,60-70
+70,M,patient 22,Transient ischemic attack,NO,M_Transient ischemic attack,60-70
+70,M,patient 22,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+70,M,patient 22,Earlier MI,NO,M_Earlier MI,60-70
+70,M,patient 22,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
+56,M,patient 23,Coronary artery disease,NO,M_Coronary artery disease,50-60
+56,M,patient 23,arterial hypertension,NO,M_arterial hypertension,50-60
+56,M,patient 23,Acute MI,NO,M_Acute MI,50-60
+56,M,patient 23,Transient ischemic attack,NO,M_Transient ischemic attack,50-60
+56,M,patient 23,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,50-60
+56,M,patient 23,Earlier MI,NO,M_Earlier MI,50-60
+56,M,patient 23,Sinus node dysfunction,NO,M_Sinus node dysfunction,50-60
+74,M,patient 24,Coronary artery disease,NO,M_Coronary artery disease,70-80
+74,M,patient 24,arterial hypertension,NO,M_arterial hypertension,70-80
+74,M,patient 24,Acute MI,NO,M_Acute MI,70-80
+74,M,patient 24,Transient ischemic attack,NO,M_Transient ischemic attack,70-80
+74,M,patient 24,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,70-80
+74,M,patient 24,Earlier MI,YES,M_Earlier MI,70-80
+74,M,patient 24,Sinus node dysfunction,NO,M_Sinus node dysfunction,70-80
+45,F,patient 25,Coronary artery disease,YES,F_Coronary artery disease,40-50
+45,F,patient 25,arterial hypertension,YES,F_arterial hypertension,40-50
+45,F,patient 25,Acute MI,NO,F_Acute MI,40-50
+45,F,patient 25,Transient ischemic attack,NO,F_Transient ischemic attack,40-50
+45,F,patient 25,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,40-50
+45,F,patient 25,Earlier MI,NO,F_Earlier MI,40-50
+45,F,patient 25,Sinus node dysfunction,NO,F_Sinus node dysfunction,40-50
+49,F,patient 26,Coronary artery disease,NO,F_Coronary artery disease,40-50
+49,F,patient 26,arterial hypertension,NO,F_arterial hypertension,40-50
+49,F,patient 26,Acute MI,NO,F_Acute MI,40-50
+49,F,patient 26,Transient ischemic attack,NO,F_Transient ischemic attack,40-50
+49,F,patient 26,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,40-50
+49,F,patient 26,Earlier MI,NO,F_Earlier MI,40-50
+49,F,patient 26,Sinus node dysfunction,NO,F_Sinus node dysfunction,40-50
+58,M,patient 27,Coronary artery disease,NO,M_Coronary artery disease,50-60
+58,M,patient 27,arterial hypertension,NO,M_arterial hypertension,50-60
+58,M,patient 27,Acute MI,YES,M_Acute MI,50-60
+58,M,patient 27,Transient ischemic attack,NO,M_Transient ischemic attack,50-60
+58,M,patient 27,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,50-60
+58,M,patient 27,Earlier MI,NO,M_Earlier MI,50-60
+58,M,patient 27,Sinus node dysfunction,NO,M_Sinus node dysfunction,50-60
+58,F,patient 28,Coronary artery disease,NO,F_Coronary artery disease,50-60
+58,F,patient 28,arterial hypertension,NO,F_arterial hypertension,50-60
+58,F,patient 28,Acute MI,NO,F_Acute MI,50-60
+58,F,patient 28,Transient ischemic attack,NO,F_Transient ischemic attack,50-60
+58,F,patient 28,left ventricular hypertrophy,NO,F_left ventricular hypertrophy,50-60
+58,F,patient 28,Earlier MI,NO,F_Earlier MI,50-60
+58,F,patient 28,Sinus node dysfunction,NO,F_Sinus node dysfunction,50-60
+62,M,patient 29,Coronary artery disease,NO,M_Coronary artery disease,60-70
+62,M,patient 29,arterial hypertension,NO,M_arterial hypertension,60-70
+62,M,patient 29,Acute MI,NO,M_Acute MI,60-70
+62,M,patient 29,Transient ischemic attack,NO,M_Transient ischemic attack,60-70
+62,M,patient 29,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+62,M,patient 29,Earlier MI,NO,M_Earlier MI,60-70
+62,M,patient 29,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
+64,M,patient 30,Coronary artery disease,NO,M_Coronary artery disease,60-70
+64,M,patient 30,arterial hypertension,NO,M_arterial hypertension,60-70
+64,M,patient 30,Acute MI,NO,M_Acute MI,60-70
+64,M,patient 30,Transient ischemic attack,NO,M_Transient ischemic attack,60-70
+64,M,patient 30,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+64,M,patient 30,Earlier MI,NO,M_Earlier MI,60-70
+64,M,patient 30,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
+73,M,patient 31,Coronary artery disease,YES,M_Coronary artery disease,70-80
+73,M,patient 31,arterial hypertension,YES,M_arterial hypertension,70-80
+73,M,patient 31,Acute MI,NO,M_Acute MI,70-80
+73,M,patient 31,Transient ischemic attack,NO,M_Transient ischemic attack,70-80
+73,M,patient 31,left ventricular hypertrophy,YES,M_left ventricular hypertrophy,70-80
+73,M,patient 31,Earlier MI,NO,M_Earlier MI,70-80
+73,M,patient 31,Sinus node dysfunction,NO,M_Sinus node dysfunction,70-80
+66,M,patient 32,Coronary artery disease,NO,M_Coronary artery disease,60-70
+66,M,patient 32,arterial hypertension,NO,M_arterial hypertension,60-70
+66,M,patient 32,Acute MI,NO,M_Acute MI,60-70
+66,M,patient 32,Transient ischemic attack,NO,M_Transient ischemic attack,60-70
+66,M,patient 32,left ventricular hypertrophy,NO,M_left ventricular hypertrophy,60-70
+66,M,patient 32,Earlier MI,YES,M_Earlier MI,60-70
+66,M,patient 32,Sinus node dysfunction,NO,M_Sinus node dysfunction,60-70
